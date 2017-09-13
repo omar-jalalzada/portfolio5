@@ -1,14 +1,64 @@
 /*
   You can use import statements to include partials:
  */
-@import "imports/reset.css";
 
+@import "imports/base.css";
+@import "imports/reset.css";
 
 /*
   Or add your statements here:
  */
 body{
-  font-family: sans-serif;
-  font-size: 1em;
+  font-family: system-ui;
+  background: #efefef;
+  & h2 {
+    color: var(--mainColor);
+  }
+}
+
+.index_container {
+  max-width: 1164px;
+  margin: 0 auto;
+  /*border: 1px solid teal;*/
+  height: 700px;
+}
+
+.projects_container {
+  /*border: 1px solid red;*/
+  max-width: 1164px;
+  margin: 0 auto;
+  & .index_project_list {
+    overflow: hidden;
+    height: 640px;
+    /*border: 1px solid;*/
+    & .index_project_desc {
+      float: left;
+      width: 48%;
+      /*border: 1px solid;*/
+      & .index_project_secondary {
+        font-size: 14px;
+        line-height: 1.2;
+        opacity: 0.5;
+        margin: 20px 0;
+      }
+    }
+    & .index_project_thumb {
+      width: 48%;
+      height: 400px;
+      /*border: 1px solid red;*/
+      float: right;
+      /*border: 1px solid;*/
+      background-image: url("/images/stockchart.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+    }
+  }
+}
+
+
+footer {
   text-align: center;
+  padding: 20px;
+  border: 1px solid grey;
 }

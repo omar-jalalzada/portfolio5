@@ -1,9 +1,42 @@
 {{ partial "header" . }}
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
 
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
+
+<div class="index_container">
+
+  <p>
+    Hi, my name is Omar Jalalzada and I'm a product designer based in San Francisco, CA. 
+I know that guac is extra and this is my portfolio.
+  </p>
+
+</div>
+
+
+
+<div class="projects_container">
+
+{{ range .Data.Pages }}
+  <div class="index_project_list index_project_{{.Title}}">
+    
+    <div class="index_project_desc">
+      <h2 class='index_project_title'>{{ .Title }}</h2>
+      <p class='index_project_info'>{{ .Description }}</p>
+      <div class="index_project_secondary">
+        <p class='index_project_platform'>Platform: {{ .Params.Platform }}</p>
+        <p class='index_project_role'>Role: {{ .Params.Role }}</p>
+      </div>
+      <a class="index_project_link" href="{{ .URL }}">
+      View Project
+      </a>
+    </div> <!-- end .index_project_desc -->
+
+    <div class="index_project_thumb project_thumb_{{.Title}}"></div>
+    <div class="index_project_pop_up" style="display: none;">
+      {{ .Content }}
+    </div>
+  </div><!-- end .index_project_list -->
+{{ end }}
+
+
 
 {{ partial "footer" . }}
