@@ -6,5 +6,25 @@
     <title>{{ $.Site.Title }}</title>
     <link rel="stylesheet" href="css/main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.typekit.net/wip1dcs.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
-  <body>
+  <body class="{{ if eq .Section "project" }} projects_body {{else if .IsHome}} home_body {{else}} else_body {{end}}">
+
+<div class='site_debug_container' style="display: none;">
+  <ul>
+    <li>.Kind {{.Kind}}</li>
+    <li>.IsPage {{.IsPage}}</li>
+    <li>.LinkTitle {{.LinkTitle}}</li>
+    <li>.Permalink {{.Permalink}}</li>
+    <li>.Pages {{.Pages}}</li>
+    <li>.RSSLink {{.RSSLink}}</li>
+    <li>.Section {{.Section}}</li>
+    <li>.Site {{.Site}}</li>
+    <li>.Title {{.Title}}</li>
+    <li>.Type {{.Type}}</li>
+    <li>.WordCount {{.WordCount}}</li>
+    <li>.Site.Pages {{.Site.Pages}}</li>
+    <li>.Site.Sectionss {{.Site.Sections}}</li>
+  </ul>
+</div>
