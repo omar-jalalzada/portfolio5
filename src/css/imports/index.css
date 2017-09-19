@@ -65,7 +65,7 @@
     height: 100%;
     & .index_text_container {
       position: absolute;
-         max-width: 360px;
+         max-width: 375px;
       & p {
         color: white;
       }
@@ -163,7 +163,7 @@
   margin: 0 auto;
   & .index_project_list {
     /*background-color: yellow;*/
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     margin:  10px 0;
     height: 640px;
     position: relative;
@@ -174,7 +174,7 @@
       transform: translateY(-50%);
       height:  300px;
       & .index_project_desc {
-        border: 1px solid teal;
+        /*border: 1px solid teal;*/
         float: left;
         width: 48%;
 
@@ -195,12 +195,11 @@
       }
 
       & .index_project_thumb {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         width: 48%;
         float: right;
         height: 100%;
         position: relative;
-
         & .project_thumb {
           /*border: 1px solid teal; */
           & .img_container{
@@ -217,7 +216,7 @@
               background-repeat: no-repeat;
               background-position: center;
               background-size: contain;
-              opacity: 0.5;
+              /*opacity: 0.5;*/
             }
             & .img_shadow {
               width: 90%;
@@ -237,17 +236,13 @@
             position: relative;
             width: 100%;
             height: 100%;
-            z-index: 1;
-
             & .img1_container {
-              /*background-color: orange;*/
               width: 290px;
               height: 200px;
-              top: 0;
-              right: 1%;
+              bottom: 0;
+              right: 0;
             }
             & .img2_container {
-              /*background-color: red;*/
               width: 523px;
               height: 335px;
               top: 0;
@@ -267,17 +262,16 @@
               top: -50px;
               width: 180px;
               height: 390px;
-              background-color: blue;
+              /*background-color: blue;*/
             }
             & .img2_container {
               right: 0;
               top: -50px;
               width: 180px;
               height: 390px;
-              background-color: orange;
+              /*background-color: orange;*/
             }
             & .img3_container {
-              
               width: 282px;
               height: 515px;
               top: -100px;
@@ -290,14 +284,46 @@
             }
           }
           &.p_t_WFL {
-            background-image: url("/images/wfl_thumb.png");
-            width: 523px;
-            height: 335px;
+            & .img1_container {
+              left: 0;
+              top: 50px;
+              width: 180px;
+              height: 180px;
+            }
+            & .img2_container {
+              right: 0;
+              top: 50px;
+              width: 180px;
+              height: 180px;
+            }
+            & .img3_container {
+              width: 300px;
+              height: 280px;
+              top: 0;
+              left: 50%;
+              margin-left: -150px;
+            }
           }
           &.p_t_SFMOMA {
-            background-image: url("/images/wfl_thumb.png");
-            width: 523px;
-            height: 335px;
+            & .img1_container {
+              left: 0;
+              top: 50px;
+              width: 180px;
+              height: 180px;
+            }
+            & .img2_container {
+              right: 0;
+              top: 50px;
+              width: 180px;
+              height: 180px;
+            }
+            & .img3_container {
+              width: 300px;
+              height: 280px;
+              top: 0;
+              left: 50%;
+              margin-left: -150px;
+            }
           }
         }
 
