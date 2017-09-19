@@ -221,23 +221,22 @@ body {
   margin: 0 auto;
   /* border: 1px solid teal; */
   & .index_project_list {
-    overflow: hidden;
+    background-color: yellow;
+    margin:  10px 0;
     height: 640px;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     position: relative;
     & .index_project_list_inner_container {
-      /* border: 1px solid orange; */
-      overflow: hidden;
+      background-color: blue;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
+      height:  300px;
       & .index_project_desc {
         float: left;
-        width: 48%;
-        /* border: 1px solid teal; */
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        width: 46%;
+        border: 1px solid teal;
+
         & .index_project_title {
           margin-bottom: 20px;
         }
@@ -254,27 +253,47 @@ body {
         }
       }
       & .index_project_thumb {
-        width: 48%;
-        /* border: 1px solid red; */
+        width: 50%;
+        border: 2px solid red;
         float: right;
+        height: 100%;
+        position: relative;
+
         & .project_thumb {
+           /* border: 1px solid teal; */
+           background-color: red;
            margin: auto;
-           height: 600px;
+           /* height: 100%; */
            background-image: url("/images/mosaic_thumb.png");
            background-repeat: no-repeat;
            background-position: center;
            background-size: contain;
-           /* border: 1px solid teal; */
+
            &.p_t_Mosaic {
              background-image: url("/images/mosaic_thumb.png");
-             background-position: center;
+             /* background-image: url("/images/mosaic_thumb_noshadow.png"); */
+             /* background-position: center; */
+             width: 523px;
+             height: 335px;
+             /* height: 400px; */
            }
            &.p_t_Macys {
              background-image: url("/images/mcom_thumb.png");
+             width: 523px;
+             height: 435px;
+             margin-top: -80px;
 
            }
            &.p_t_WFL {
              background-image: url("/images/wfl_thumb.png");
+             width: 523px;
+             height: 335px;
+
+           }
+           &.p_t_SFMOMA {
+             background-image: url("/images/wfl_thumb.png");
+             width: 523px;
+             height: 335px;
 
            }
         }
@@ -286,6 +305,7 @@ body {
       /*border: 2px solid yellow;*/
       & .index_project_desc {
         right: 0;
+        float: right;
       }
       & .index_project_thumb {
         float: left;
@@ -308,7 +328,7 @@ footer {
   box-shadow: 0 0 1px 0px rgba(74,73,71,.3);
   font-size:  12px;
   font-weight: 100;
-  
+
   & .footer_copyright {
     color: hsl(170, 6%, 70%);    
     font-size: 10px;
