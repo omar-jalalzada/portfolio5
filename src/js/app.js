@@ -21,3 +21,25 @@ if (ojHeight > 960) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// JavaScript
+window.sr = ScrollReveal({ duration: 1000, scale: 1, distance: '10px', viewFactor: 0.01 });
+// sr.reveal('.img2_container', { distance: '20px', duration: 600, origin: 'left', delay: 200 });
+// sr.reveal('.img1_container', { distance: '20px', duration: 600, origin: 'right', delay: 200 });
+// sr.reveal('.img3_container', { distance: '10px', duration: 600 });
+// sr.reveal('.index_project_desc', { distance: '5px', duration: 500, viewFactor: 0.05, scale: 1 });
+
+sr.reveal('.sr_direction_left', { origin: 'right' });
+sr.reveal('.sr_direction_right', { origin: 'left' });
+sr.reveal('.sr_direction_up');
+sr.reveal('.sr_delay_100', { delay: 100 });

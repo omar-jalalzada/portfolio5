@@ -36,15 +36,14 @@
       <div class="index_project_list_inner_container">
        
         <div class="index_project_thumb">
-          <div class="project_thumb p_t_{{.Title}}"></div>
-          
-<!--           <div class="img_tag_wrapper">
-            <img src="{{ .Params.indexImageRoute }}" alt="Project {{.Title}} Thumbnail" width="100%">
-          </div> -->
-
+          <div class="project_thumb p_t_{{.Title}}">
+            {{ if .Params.indexImageRoute1 }} <div class="img_container img1_container {{.Params.indexImageRoute1}}" alt="Project {{.Title}} Thumbnail 1"><div class="img_shadow"></div><div class="img_thumb"></div></div>{{ end }}
+            {{ if .Params.indexImageRoute2 }} <div class="img_container img2_container {{.Params.indexImageRoute2}}" alt="Project {{.Title}} Thumbnail 2"><div class="img_shadow"></div><div class="img_thumb"></div></div>{{ end }}
+            {{ if .Params.indexImageRoute3 }} <div class="img_container img3_container {{.Params.indexImageRoute3}}" alt="Project {{.Title}} Thumbnail 3"><div class="img_shadow"></div><div class="img_thumb"></div></div>{{ end }}
+          </div>
         </div> 
-        <div class="index_project_desc">
-          <h2 class='index_project_title'>{{ .Title }}</h2>
+        <div class="index_project_desc sr_direction_up">
+          <h2 class='index_project_title '>{{ .Title }}</h2>
           <p class='index_project_info'>{{ .Description }}</p>
           <div class="index_project_secondary">
             <p class='index_project_platform'>Platform: {{ .Params.Platform }}</p>

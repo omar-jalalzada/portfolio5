@@ -19,3 +19,24 @@ a:link, a:visited, a:active {
 a:hover {
   color:  color(var(--secondaryColor) lightness(-10%));
 }
+
+
+body{
+  font-family: system-ui;
+  font-family: "filson-pro";
+
+  background: var(--bgColor);
+  color: var(--ojblack);
+  margin: auto;
+  font: 400;
+  font-size:  16px;
+  font-weight: 300;
+  & * {
+    /* border:  1px solid; */
+  }
+  & .primary_content_container {
+    padding:  40px;
+    max-width: 1164px;
+    margin:  auto;
+  }
+}
