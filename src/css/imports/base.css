@@ -15,6 +15,7 @@
 a:link, a:visited, a:active {
   color: var(--secondaryColor);
   text-decoration: none;
+  cursor: pointer;
 }
 a:hover {
   color:  color(var(--secondaryColor) lightness(-10%));
