@@ -11,7 +11,7 @@ footer {
   box-shadow: 0 0 1px 0px rgba(74,73,71,.3);
   font-size:  12px;
   font-weight: 100;
-
+  font-family: system-ui;
   & .footer_copyright {
     color: hsl(170, 6%, 70%);    
     font-size: 10px;

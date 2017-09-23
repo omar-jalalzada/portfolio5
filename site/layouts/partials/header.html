@@ -28,3 +28,7 @@
     <li>.Site.Sectionss {{.Site.Sections}}</li>
   </ul>
 </div>
+
+{{ if eq .Section "project" }}
+    <a class="project_home_link" href="{{ $.Site.BaseURL }}">Back To Homepage</a>
+{{end}}

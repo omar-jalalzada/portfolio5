@@ -14,7 +14,7 @@
         <!-- placeholder for main image -->
           <div class="index_graphic_inner_container">
             
-            <span class='spark_container'>
+            <span class='spark_container' id="sparkie">
               <span class='l_1'></span>
               <span class='l_2'></span>
               <span class='r_1'></span>
@@ -37,9 +37,10 @@
        
         <div class="index_project_thumb">
           <div class="project_thumb p_t_{{.Title}}">
-            {{ if .Params.indexImageRoute1 }} <div class="img_container img1_container {{.Params.indexImageRoute1}}" alt="Project {{.Title}} Thumbnail 1"><div class="img_shadow"></div><div class="img_thumb"></div></div>{{ end }}
-            {{ if .Params.indexImageRoute2 }} <div class="img_container img2_container {{.Params.indexImageRoute2}}" alt="Project {{.Title}} Thumbnail 2"><div class="img_shadow"></div><div class="img_thumb"></div></div>{{ end }}
-            {{ if .Params.indexImageRoute3 }} <div class="img_container img3_container {{.Params.indexImageRoute3}}" alt="Project {{.Title}} Thumbnail 3"><div class="img_shadow"></div><div class="img_thumb"></div></div>{{ end }}
+            {{ if .Params.indexDots }} <div class="img_container dotted_box {{.Params.indexDots}}" alt="Project {{.Title}} Dots"></div>{{ end }}
+            {{ if .Params.indexThumb1 }} <div class="img_container img1_container {{.Params.indexThumb1}}" alt="Project {{.Title}} Thumbnail 1"><div class="img_shadow"></div><div class="img_thumb"></div></div>{{ end }}
+            {{ if .Params.indexThumb2 }} <div class="img_container img2_container {{.Params.indexThumb2}}" alt="Project {{.Title}} Thumbnail 2"><div class="img_shadow"></div><div class="img_thumb"></div></div>{{ end }}
+            {{ if .Params.indexThumb3 }} <div class="img_container img3_container {{.Params.indexThumb3}}" alt="Project {{.Title}} Thumbnail 3"><div class="img_shadow"></div><div class="img_thumb"></div></div>{{ end }}
           </div>
         </div> 
         <div class="index_project_desc sr_direction_up">
