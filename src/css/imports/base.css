@@ -24,8 +24,7 @@ a:hover {
 
 
 body{
-  font-family: system-ui;
-  font-family: "filson-pro";
+  font-family: "filson-pro", system-ui;
 
   background: var(--bgColor);
   color: var(--ojblack);

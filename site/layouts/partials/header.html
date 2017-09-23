@@ -27,6 +27,9 @@
     <li>.Site.Pages {{.Site.Pages}}</li>
     <li>.Site.Sectionss {{.Site.Sections}}</li>
     <li>{{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}</li>
+    <li>.Site.BaseURL{{ $.Site.BaseURL }}</li>
+    <li>.Site.BaseURL | absURL {{ $.Site.BaseURL | absURL}}</li>
+    <li>.Site.BaseURL | relURL {{ $.Site.BaseURL | relURL}}</li>
   </ul>
 </div>
 
