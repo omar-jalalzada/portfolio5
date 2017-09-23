@@ -93,10 +93,7 @@
             margin:  10px;
             background: var(--ojabstractLines);
             border-radius: 2px;
-            transition-property: transform, opacity;
-            transition-duration: 1.5s, 1s;
-            transition-timing-function: cubic-bezier(0,.93,.8,.92), ease-out;
-            transition-delay: 0s;
+            transition: transform 1.5s cubic-bezier(0,.93,.8,.92) 0s, opacity .5s ease-out 0s;
             opacity: 0;
           }
           & .l_1 {
