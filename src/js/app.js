@@ -33,7 +33,7 @@ if (ojHeight > 960) {
 
 
 // JavaScript
-window.sr = ScrollReveal({ duration: 2000, scale: 1, distance: '10px', viewFactor: 0.03, easing: 'cubic-bezier(.18,.33,.59,1)' });
+window.sr = ScrollReveal({ duration: 1000, scale: 1, distance: '10px', viewFactor: 0.03, easing: 'cubic-bezier(.18,.33,.59,1)' });
 // sr.reveal('.img2_container', { distance: '20px', duration: 600, origin: 'left', delay: 200 });
 // sr.reveal('.img1_container', { distance: '20px', duration: 600, origin: 'right', delay: 200 });
 // sr.reveal('.img3_container', { distance: '10px', duration: 600 });

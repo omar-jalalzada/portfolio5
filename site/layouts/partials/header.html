@@ -26,6 +26,7 @@
     <li>.WordCount {{.WordCount}}</li>
     <li>.Site.Pages {{.Site.Pages}}</li>
     <li>.Site.Sectionss {{.Site.Sections}}</li>
+    <li>{{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}</li>
   </ul>
 </div>
 
