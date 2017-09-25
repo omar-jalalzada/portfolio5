@@ -5,59 +5,7 @@
 .index_container {
   margin: 0 auto;
   position: relative;
-  height: 758px;
-
-  /* ************* IMAC */
-  &.index_imac {
-    /* background-color: red; */
-    height: 1000px;
-    & .spark_container {
-      left:  360px;
-      top:  450px;
-      &::before {
-        height: 1760px;
-        left:  10px;
-        top:  -550px;
-      }
-    }
-    & .index_inner_container .index_text_container {
-      top:  45%;
-    }
-  }
-
-  /* ************* MACKBOOK */
-  &.index_macbook {
-    /* background-color: blue; */
-    height: 700px;
-    & .spark_container {
-      left:  320px;
-      top:  380px;
-      &::before {
-        height: 1350px ;
-        left:  20px;
-         top:  -450px;
-      }
-    }
-    & .index_inner_container .index_text_container {
-      top:  54%;
-    }
-  }
-
-  /* ************* PHONE */
-  &.index_iphone {
-    /* background-color: green; */
-    height: 380px;
-    & .index_graphic_container {
-      display: none;
-    } 
-    & .spark_container {
-      visibility: hidden;
-      display: none;
-    }
-    & .index_inner_container .index_text_container {
-      top:  54%;
-    }
-  }
+  height: 700px;
 
   & .index_inner_container {
     /* border: 1px solid green; */
@@ -65,7 +13,8 @@
     height: 100%;
     & .index_text_container {
       position: absolute;
-         max-width: 375px;
+      max-width: 375px;
+      top:  54%;
       & p {
         color: white;
       }
@@ -85,7 +34,8 @@
           width:  100px;
           height: 90px;
           position: absolute;
-
+          left:  320px;
+          top:  380px;
           &> span {
             display: block;
             width:  6px;
@@ -141,6 +91,9 @@
             display: block;
             background-color: var(--ojabstractLines);
             border-radius: 1px;
+            height: 1420px ;
+            left:  20px;
+            top:  -450px;
           }
           &::after {
             height: 100px;

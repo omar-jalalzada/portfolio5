@@ -7,15 +7,15 @@ var ojHeight = window.innerHeight || document.documentElement.clientHeight || do
 // console.log("width: " + ojWidth);
 // console.log("height: " + ojHeight);
 
-if (ojHeight > 960) {
-  document.getElementById("index_container").className += " index_imac";
-} else if (ojHeight < 960 & ojHeight > 700 ) {
-  document.getElementById("index_container").className += " index_macbook";
-} else if (ojHeight < 700) {
-  document.getElementById("index_container").className += " index_iphone";
-} else {
+// if (ojHeight > 960) {
+//   document.getElementById("index_container").className += " index_imac";
+// } else if (ojHeight < 960 & ojHeight > 700 ) {
+//   document.getElementById("index_container").className += " index_macbook";
+// } else if (ojHeight < 700) {
+//   // document.getElementById("index_container").className += " index_iphone";
+// } else {
 
-}
+// }
 // Ending get browser height
 
 

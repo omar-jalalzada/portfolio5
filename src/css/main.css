@@ -10,33 +10,48 @@
 /* @import "imports/mobile.css"; */
 
 
+/* iMac*/
+@media (height >= 960px) {
+  .index_container {
+    height: 1050px;
+    & .spark_container {
+      left:  360px;
+      top:  450px;
+      &::before {
+        height: 1900px !important;
+        left:  0px !important;
+        top:  -550px !important;
+      }
+    }
+    & .index_inner_container .index_text_container {
+      top:  45%;
+    }
+  }
+}
 
-
+/* iPhone */
 @media (width <= 700px) {
   .index_container {
-    height: 400px;
+    height: 500px;
     & .index_inner_container {
       width: 100%;
       & .index_text_container {
-        /*position: static;*/
-        /*transform: none;*/
-        width: 100%;
-        & p {
-          /* background: red; */
-        }
+        width: 92%;
+        font-size: 14px;
+        height:  90px;
+        top:  50%;
+        margin:  -45px 0 0 6%;
       }
       & .index_graphic_container {
         display: none;
       }
     }
   }
+
   .projects_container {
     & .index_project_list {
       height: auto;
-      margin: 0 0 60px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-      overflow: hidden;
-
+      margin: 0 0 80px 0;
       & .index_project_list_inner_container {
         position: static;
         transform: none;
@@ -45,16 +60,19 @@
         height: auto;
         & .index_project_desc {
           float: none;
-          width: 100%;
-          padding-bottom: 10px;
-          margin-top: 50px;
-          height:  300px;
-
+          width: 92%;
+          margin: 40px 4% 0 4%;
+          height:  280px;
           & .index_project_title {
-            margin-bottom: 0px;
+            margin-bottom: 10px;
+          }
+
+          & .index_project_info {
+            font-size: 14px;
+            margin-bottom: 10px;
           }
           & .index_project_secondary {
-            /* margin: 20px 0px; */
+            margin:  0px 0 20px 0;
             font-size: 14px;
           }
           & .index_project_link {
@@ -62,38 +80,84 @@
             padding:  10px 20px;
             border-radius: 30px;
             font-size: 14px;
-            
           }
-
         }
         & .index_project_thumb {
           float: none;
           width: 100%;
           margin: 0;
           padding: 0;
-          & .project_thumb .img_container {
-            position: relative;
-            width:  300px !important;
-            height: 100px !important;
-            top: 0 !important;
-            left: 0 !important;
-            margin:  0 !important;
-
-            & .img_shadow {
-              /* position: static; */
-              top:  0;
-              left:  0;
-            }
-            & .img_thumb {
-              /* position: static;  */
-              top:  0;
-              left:  0;
-
-            }
-          }
           & .project_thumb {
-            /* background-color: green; */
-            /* height: 2000px; */
+            /* border:  1px solid blue; */
+            & .img_container {
+              /* border:  1px solid gold; */
+              & .img_shadow {
+                top:  0;
+                left:  0;
+              }
+              & .img_thumb {
+                top:  0;
+                left:  0;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+              }
+              &.secondary_thumb {
+                display: none;
+              }
+              &.dotted_box {
+                width:  420px;
+                height: 100px;
+                left:  50%;
+                margin-left:  -210px;
+                bottom:  -25px;
+              }
+              &.main_thumb::before {
+                display: none;
+              }
+            }
+            &.p_t_Mosaic {
+              height:  220px;
+              & .main_thumb {
+                width:  310px;
+                height: 223px;
+                right: auto;
+                bottom: auto;
+                left:  50%;
+                margin-left: -155px;
+                top: 0;
+              }
+            }
+            &.p_t_Macys {
+              height:  470px;
+              & .main_thumb {
+                right: auto;
+                bottom: auto;
+                left:  50%;
+                margin-left: -160px;
+                top: 0;
+              }
+            }
+            &.p_t_WFL {
+              height:  500px;
+              & .main_thumb {
+                right: auto;
+                bottom: auto;
+                left:  50%;
+                margin-left: -156px;
+                top: 0;
+              }
+            }
+            &.p_t_Arc {
+              height:  380px;
+              & .main_thumb {
+                right: auto;
+                bottom: auto;
+                left:  50%;
+                margin-left: -160px;
+                top: 0;
+              }
+            }
           }
         }
       }

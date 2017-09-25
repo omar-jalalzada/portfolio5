@@ -36,7 +36,7 @@ body{
     /* border:  1px solid; */
   }
   & .primary_content_container {
-    padding:  40px;
+    padding:  10px;
     max-width: 1164px;
     margin:  auto;
   }
