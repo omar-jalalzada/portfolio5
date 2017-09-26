@@ -38,3 +38,16 @@
         }
 
         */
+
+
+
+
+
+        class="
+        {{ if eq .Section "project" }} 
+          projects_body 
+        {{else if .IsHome}} 
+          home_body 
+        {{else}} 
+          else_body 
+        {{end}}"

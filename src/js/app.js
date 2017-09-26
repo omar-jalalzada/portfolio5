@@ -52,5 +52,4 @@ document.addEventListener("DOMContentLoaded", function(){
   if (sparkie != null && sparkie !== undefined) {
     sparkie.className += " loaded";
   }
-  
 });

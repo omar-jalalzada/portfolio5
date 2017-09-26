@@ -5,7 +5,9 @@
 @import "imports/reset.css";
 @import "imports/base.css";
 @import "imports/index.css";
-/* @import "imports/header.css"; */
+@import "imports/projects.css";
+@import "imports/project_lister.css";
+@import "imports/header.css";
 @import "imports/footer.css";
 /* @import "imports/mobile.css"; */
 
@@ -49,7 +51,7 @@
     }
   }
 
-  .projects_container {
+  .project_lister_container {
     & .index_project_list {
       height: auto;
       margin: 0 0 80px 0;

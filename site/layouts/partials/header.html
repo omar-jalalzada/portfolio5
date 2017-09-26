@@ -9,7 +9,7 @@
     <script src="https://use.typekit.net/wip1dcs.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
-  <body class="{{ if eq .Section "project" }} projects_body {{else if .IsHome}} home_body {{else}} else_body {{end}}">
+  <body>
 
 <div class='site_debug_container' style="display: none;">
   <ul>
@@ -32,7 +32,3 @@
     <li>.Site.BaseURL | relURL {{ $.Site.BaseURL | relURL}}</li>
   </ul>
 </div>
-
-{{ if eq .Section "project" }}
-    <a class="project_home_link" href="{{ $.Site.BaseURL }}">Back To Homepage</a>
-{{end}}
