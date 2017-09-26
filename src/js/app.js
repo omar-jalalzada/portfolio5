@@ -48,5 +48,9 @@ sr.reveal('.sr_delay_100', { delay: 100 });
 
 
 document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById("sparkie").className += " loaded";
+  var sparkie = document.getElementById("sparkie")
+  if (sparkie != null && sparkie !== undefined) {
+    sparkie.className += " loaded";
+  }
+  
 });

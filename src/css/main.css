@@ -31,6 +31,7 @@
 
 /* iPhone */
 @media (width <= 700px) {
+  /* body * { box-shadow: inset 0 0 1px 1px red; } */
   .index_container {
     height: 500px;
     & .index_inner_container {
@@ -89,8 +90,10 @@
           padding: 0;
           & .project_thumb {
             /* border:  1px solid blue; */
+            /* overflow: hidden; */
             & .img_container {
               /* border:  1px solid gold; */
+
               & .img_shadow {
                 top:  0;
                 left:  0;
@@ -106,11 +109,17 @@
                 display: none;
               }
               &.dotted_box {
-                width:  420px;
+                width:  100%;
+                height: 100px;
+                left:  0%;
+                margin-left:  0;
+                margin-right:  0;
+                bottom:  -25px;
+       /*          width:  420px;
                 height: 100px;
                 left:  50%;
                 margin-left:  -210px;
-                bottom:  -25px;
+                bottom:  -25px; */
               }
               &.main_thumb::before {
                 display: none;
