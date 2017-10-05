@@ -9,7 +9,9 @@
     <script src="https://use.typekit.net/wip1dcs.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
-  <body>
+  <body {{ if .Page.Params.body_class }} class="{{ .Page.Params.body_class }}" {{end}}>
+
+
 
 <div class='site_debug_container' style="display: none;">
   <ul>

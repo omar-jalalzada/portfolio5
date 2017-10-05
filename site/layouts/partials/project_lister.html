@@ -19,15 +19,26 @@
           <p class='index_project_platform'>Platform: {{ .Params.Platform }}</p>
           <p class='index_project_role'>Role: {{ .Params.Role }}</p>
         </div>
-        <a class="index_project_link" href="{{ .URL }}">View Project</a>
+
+
+        <a class="hover_btn"> 
+
+        </a>
+
+        <a class="index_project_link" href="{{ .URL }}">
+          <span class="text"> View Project </span>
+          <span class="t_b"></span>
+          <span class="r_b"></span>
+          <span class="l_b"></span>
+          <span class="b_b"></span>
+          <span class="b_b2"></span>
+        </a>
       </div> <!-- end .index_project_desc -->
 
     </div> <!-- end .index_project_list_inner_container -->
 
     
-    <div class="index_project_pop_up" style="display: none;">
-      {{ .Content }}
-    </div>
+
 
 
   </div><!-- end .index_project_list -->

@@ -32,12 +32,8 @@ var ojHeight = window.innerHeight || document.documentElement.clientHeight || do
 
 
 
-// JavaScript
+// Scroll Reveal Config & Setup
 window.sr = ScrollReveal({ duration: 1000, scale: 1, distance: '10px', viewFactor: 0.03, easing: 'cubic-bezier(.18,.33,.59,1)' });
-// sr.reveal('.img2_container', { distance: '20px', duration: 600, origin: 'left', delay: 200 });
-// sr.reveal('.img1_container', { distance: '20px', duration: 600, origin: 'right', delay: 200 });
-// sr.reveal('.img3_container', { distance: '10px', duration: 600 });
-// sr.reveal('.index_project_desc', { distance: '5px', duration: 500, viewFactor: 0.05, scale: 1 });
 
 sr.reveal('.sr_direction_left', { origin: 'right' });
 sr.reveal('.sr_direction_right', { origin: 'left' });
@@ -45,7 +41,7 @@ sr.reveal('.sr_direction_down', { origin: 'down' });
 sr.reveal('.sr_direction_up');
 sr.reveal('.sr_delay_100', { delay: 100 });
 
-
+sr.reveal('.p_thumb_grid li', { duration: 1000 }, 100);
 
 document.addEventListener("DOMContentLoaded", function(){
   var sparkie = document.getElementById("sparkie")

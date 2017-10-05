@@ -6,6 +6,8 @@
 @import "imports/base.css";
 @import "imports/index.css";
 @import "imports/projects.css";
+@import "imports/projects.css";
+@import "imports/project_shortcodes.css";
 @import "imports/project_lister.css";
 @import "imports/header.css";
 @import "imports/footer.css";
@@ -15,7 +17,13 @@
 /* iMac*/
 @media (height >= 960px) {
   .index_container {
-    height: 1050px;
+    height: 1100px;
+
+    & .index_inner_container {
+      & .index_text_container {
+        top:  35%;
+      }
+    }
     & .spark_container {
       left:  360px;
       top:  450px;
@@ -25,8 +33,12 @@
         top:  -550px !important;
       }
     }
-    & .index_inner_container .index_text_container {
-      top:  45%;
+  }
+
+
+  .project_lister_container {
+    & .index_project_list {
+      margin:  120px 0;
     }
   }
 }

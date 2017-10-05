@@ -7,31 +7,134 @@
     margin:  40px 0;
     height: 640px;
     position: relative;
+
+    &.index_project_Mosaic {
+      margin-top: 0;
+    }
     & .index_project_list_inner_container {
       /* border:  1px solid red; */
       position: relative;
       top: 50%;
       transform: translateY(-50%);
-      height:  300px;
+      height:  280px;
       & .index_project_desc {
         /* border: 1px solid teal; */
         float: left;
         width: 48%;
-
+        height: 100%;
         & .index_project_title {
-          margin-bottom: 20px;
+          margin-top: -10px;
+          margin-bottom: 6px;
+          font-size: 32px;
+        }
+        & .index_project_info {
+          margin-bottom: 50px;
         }
         & .index_project_secondary {
           font-size: 14px;
           line-height: 1.2;
-          color:  var(--ojgray);
-          margin: 20px 0 60px 0;
+          color:  var(--ojtl4);
+          margin-bottom: 10px;
         }
 
+        /* HOVER ANIMATION FOR THE "VIEW PROJECT" ANCHOR TAG */
         & .index_project_link {
-          border-bottom: 3px solid;
-          padding: 5px 0;
+          position: relative;
+          width: var(--oj_w);
+          height: var(--oj_h);
+          display: block;
+          font-size: 14px;
+          transition: width .2s ease-out .4s, background .1s ease-in;
+          cursor: pointer;
+          overflow: hidden;
+          /* border:  1px solid; */
+          & span {
+            display: block;
+            position: absolute;
+            background-color: var(--ojrd);
+            &.text {
+              transform: translate3d(0,12px,0);
+              text-align: center;
+              height: 20px;
+              width: 100%;
+              background-color: transparent;
+              transition: transform .5s cubic-bezier(0,.93,.8,.92);
+            }
+            &.b_b {
+              left: 0;
+              bottom: 0;
+              width: calc(var(--oj_w) + 20px);
+              height: 2px;
+              /* opacity: 0.1; */
+              transition: transform .2s cubic-bezier(0,.93,.8,.92) .2s;
+            }
+            &.b_b2 {
+              left: 0;
+              bottom: 0;
+              width: calc(var(--oj_w) + 20px);
+              height: 2px;
+              transition: transform .1s cubic-bezier(0,.93,.8,.92) , height .1s cubic-bezier(0,.93,.8,.92);
+              transform: translate3d(-calc(var(--oj_w) + 20px),0,0);
+            }
+            &.r_b {
+              right: 0;
+              bottom: 0;
+              width: 2px;
+              height: var(--oj_h);
+              transform: translate3d(0, var(--oj_h) ,0);
+              transition: transform .15s cubic-bezier(0,.93,.8,.92) .31s;
+            }
+            &.t_b {
+              right: 0;
+              top: 0;
+              width: calc(var(--oj_w) + 18px);
+              height: 2px;
+              transform: translate3d( calc(var(--oj_w) + 20px),0,0);
+              transition: transform .1s cubic-bezier(0,.93,.8,.92) .19s;
+            }
+            &.l_b {
+              top: 0;
+              left: 0;
+              height: var(--oj_h);
+              width: 2px;
+              transform: translate3d(0, -var(--oj_h) ,0);
+              transition: transform .1s cubic-bezier(0,.93,.8,.92) .1s;
+            }
+          }
         }
+        & .index_project_link:hover {
+          width: calc(var(--oj_w) + 20px);
+          background-color:  var(--ojtl1);
+          transition: width .2s ease-out, background .5s ease-in;
+          & span {
+            &.text {
+              transform: translate3d(0,10px,0);
+              transition: transform .3s ease-out;
+              color:  var(--ojrd);
+            }
+            &.b_b {
+              transform: translate3d(calc(var(--oj_w) + 20px),0,0);
+              transition: transform .2s cubic-bezier(0,.93,.8,.92) .05s;
+            }
+            &.r_b {
+              transform: translate3d(0, 0, 0);
+              transition: transform .15s cubic-bezier(0,.93,.8,.92) .05s;
+            }
+            &.t_b {
+              transform: translate3d(0, 0, 0);
+              transition: transform .1s cubic-bezier(0,.93,.8,.92) .19s;
+            }
+            &.l_b {
+              transform: translate3d(0, 0, 0);
+              transition: transform .15s cubic-bezier(0,.93,.8,.92) .28s;
+            }
+            &.b_b2 {
+              transform: translate3d(0, 0, 0);
+              transition: transform .15s cubic-bezier(0,.93,.8,.92) .25s;
+            }
+          }
+        } /* END HOVER ANIMATION */
+
       }
 
       & .index_project_thumb {
@@ -58,14 +161,12 @@
             }
             &.secondary_thumb {
               & .img_thumb { 
-                /* opacity: .5 !important; */
                 box-shadow: 0 0px 1px 0 rgba(0,0,0,0.2), 
                             0 1px 1px 0 rgba(0,0,0,0.1);
               }
             }
             &.main_thumb {
               & .img_thumb {
-                /* opacity: .5; */
                 box-shadow: 0 0 1px 0 rgba(0,0,0,0.1),
                             0 0 3px rgba(0,0,0,0.1);
               }
@@ -88,7 +189,7 @@
               background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
               background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
               background-image: repeating-radial-gradient(center center, rgba(0,0,0,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
-              background-size: 5px 5px;
+              background-size: 6px 6px;
             }
 
           }
@@ -101,7 +202,7 @@
               height: 316px;
               bottom: -80px;
               left: 20px;
-              background-color: var(--bgColor);
+              background-color: var(--ojtl);
               & .img_thumb {
                 background-image: url("/images/index/index_agenda_401x316@2x.png");
               }
@@ -150,6 +251,7 @@
                 position: absolute;
                 display: block;
                 background-color: var(--ojabstractLines);
+                box-shadow: 0 0 0 1px color(var(--ojtl) shade(4%) a(50%));
                 border-radius: 1px;
                 height: 580px;
                 left:  50%;
@@ -190,6 +292,7 @@
                 position: absolute;
                 display: block;
                 background-color: var(--ojabstractLines);
+                box-shadow: 0 0 0 1px color(var(--ojtl) shade(4%) a(50%));
                 border-radius: 1px;
                 height: 580px;
                 left:  50%;
@@ -229,6 +332,7 @@
                 position: absolute;
                 display: block;
                 background-color: var(--ojabstractLines);
+                box-shadow: 0 0 0 1px color(var(--ojtl) shade(4%) a(50%));
                 border-radius: 1px;
                 height: 500px;
                 left:  50%;
