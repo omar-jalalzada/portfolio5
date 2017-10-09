@@ -1,14 +1,14 @@
 
 .index_container {
-  /* border: 1px solid gold; */
+  border: 1px solid gold;
   margin: 0 auto;
   position: relative;
-  height: 700px;
   padding:  10px;
+  max-width: 1264px;
   & .index_inner_container {
-    /* border: 1px solid green; */
+    border: 1px solid green;
+    height: 700px;
     position: relative;
-    height: 100%;
     & .index_text_container {
       /* border:  1px solid blue; */
       position: absolute;

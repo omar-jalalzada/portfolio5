@@ -1,6 +1,6 @@
 - set the height of the index container based on the browser height
 - add google analytics
-- 
+- change the mosaic home thumbnail from JG Calendar to OJ Calendar
 
 
 

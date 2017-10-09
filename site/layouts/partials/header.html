@@ -15,22 +15,22 @@
 
 <div class='site_debug_container' style="display: none;">
   <ul>
-    <li>.Kind {{.Kind}}</li>
-    <li>.IsPage {{.IsPage}}</li>
-    <li>.LinkTitle {{.LinkTitle}}</li>
-    <li>.Permalink {{.Permalink}}</li>
-    <li>.Pages {{.Pages}}</li>
-    <li>.RSSLink {{.RSSLink}}</li>
-    <li>.Section {{.Section}}</li>
-    <li>.Site {{.Site}}</li>
-    <li>.Title {{.Title}}</li>
-    <li>.Type {{.Type}}</li>
-    <li>.WordCount {{.WordCount}}</li>
-    <li>.Site.Pages {{.Site.Pages}}</li>
-    <li>.Site.Sectionss {{.Site.Sections}}</li>
-    <li>{{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}</li>
-    <li>.Site.BaseURL{{ $.Site.BaseURL }}</li>
-    <li>.Site.BaseURL | absURL {{ $.Site.BaseURL | absURL}}</li>
-    <li>.Site.BaseURL | relURL {{ $.Site.BaseURL | relURL}}</li>
+    <li>.Kind: {{.Kind}}</li>
+    <li>.IsPage: {{.IsPage}}</li>
+    <li>.LinkTitle: {{.LinkTitle}}</li>
+    <li>.Permalink: {{.Permalink}}</li>
+    <li>.Pages: {{.Pages}}</li>
+    <li>.RSSLink: {{.RSSLink}}</li>
+    <li>.Section: {{.Section}}</li>
+    <li>.Site: {{.Site}}</li>
+    <li>.Title: {{.Title}}</li>
+    <li>.Type: {{.Type}}</li>
+    <li>.WordCount: {{.WordCount}}</li>
+    <li>.Site.Pages: {{.Site.Pages}}</li>
+    <li>.Site.Sectionss: {{.Site.Sections}}</li>
+    <li> Dev/Prod? (getenv "NODE_ENV"): {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}</li>
+    <li>.Site.BaseURL: {{ $.Site.BaseURL }}</li>
+    <li>.Site.BaseURL | absURL: {{ $.Site.BaseURL | absURL}}</li>
+    <li>.Site.BaseURL | relURL: {{ $.Site.BaseURL | relURL}}</li>
   </ul>
 </div>

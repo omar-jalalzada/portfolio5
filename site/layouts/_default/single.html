@@ -1,33 +1,50 @@
 {{ define "main" }}
 
-<div class="project_header">
+<!-- <div class="project_header">
   <div class="project_inner_header">
     <a class="project_home_link" href="{{ $.Site.BaseURL }}">&#x2039;&#x2002;Back To Homepage </a>
   </div>
-</div>
+</div> -->
 
 
 <div class="projects_inner_container">
 
+  <div class="p_section_one project_section_container p_s_max_width">
 
+    <div class= "left_panel">
+      <div class="p_title_container">
+       <h1 class="p_title">{{ .Title }}</h1>
+       <p class="p_info">{{ .Description }}</p>
+      </div>
 
-  <div class="p_desc">
+      <div class="p_role_container">
+       <h3 class="p_role_title p_section_title">My Role</h3>
+       <p class="p_role_content">{{ .Params.p_role_content}}</p>
+      </div>
+    </div>
+
+    <div class="right_panel">
+      <div class="p_main_thumb_container">
+        {{ range $value := .Params.p_main_thumb  }}
+          
+          {{ if eq $value "1noshadow" }} 
+            <div class="p_img_{{$value}}"></div>
+          {{ else if eq $value "dots" }}
+            <div class="p_{{$value}}_box oj_dots"></div>
+          {{ else}}
+            <div class="p_img_{{$value}}">
+              <div class="img_shadow"></div>
+              <div class="img_thumb"></div>        
+            </div>
+          {{end}}
+
+        {{ end }} 
+      </div>
+    </div>
+
     
-    <div class="p_title_container">
-      <h2 class="p_title">{{ .Title }}</h2>
-      <p class="p_info">{{ .Description }}</p>
-    </div>
 
-    <div class="p_role_container">
-      <div class="p_role_title p_section_title">My Role</div>
-      <div class="p_role_content">{{ .Params.p_role_content}}</div>
-    </div>
-  
 
-    <div class="p_main_thumb_container">
-      <div class="img_shadow"></div>
-      <div class="img_container"></div>
-    </div>
 
 </div> <!-- end .index_project_desc -->
 
