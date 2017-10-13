@@ -1,66 +1,153 @@
 .projects_inner_container {
-  padding:  0 20px 0 20px;
-  /* border:  2px solid gold; */
 
-  & .p_section_title {
-    margin-bottom: 16px;
 
+
+
+  & .p_section_top {
+    margin-top: 220px;
+    padding: 0 10px;
+    /* border:  1px solid red; */
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    & .left_panel {
+      /* border:  1px solid gold; */
+      & .p_title_container {
+        margin-bottom:  80px;
+         & .p_title {
+          /* margin-bottom:  20px; */
+         }
+      }
+      & .p_role_container {
+        
+      }
+    }
+
+    & .right_panel {
+      position: relative;
+      /* border:  2px solid purple; */
+    }
   }
 
-  & .p_s_max_width {
+
+
+  & .p_header_container {
+    padding: 0 10px;
     max-width:  var(--oj_maxwidth);
-    margin-left:  auto;
-    margin-right:  auto;
-  }
+    margin:  0 auto 80px auto;
+    & .p_header_dots_l {
+      width: 28px;
+      height: 56px;
+      float:  left;
+      margin-left:  -50px;
+      & .p_header_dots_line {
+        width: 38px;
+        height:  2px;
+        margin:  20px 0 0 -10px;
+        background-color: var(--ojyw);
+      }
+    }
+    & .p_header_inner_container {
+      & .p_header_dots_number {
+        font-size:  14px;
+        color:  var(--ojtl4);
+        line-height: 1;
+        margin-bottom: 10px;
+      }
+      & h2 {
+        margin-left:  -1px;
+      }
+      & .p_header_content {
+        
+      }
+    }
 
+  }
 
 
   & .project_section_container {
+    /* border:  1px solid green; */
+    margin-top: 280px;
 
+    &.project_section_wrap_up {
+      padding:  220px 10px 100px 10px;
+    }
 
-    &.p_section_one {
-
-      &::after {
-        content: "";
-        display: table;
-        clear: both;
+    & .project_bottom_divider {
+      margin-bottom: 100px;
+      & p {
+        font-size: 12px;
+        background-color: var(--ojtl);
+        width:  200px;
+        margin:  0 auto;
+        text-align: center;
+        margin-top: -15px;
       }
-      & .left_panel {
-        /* border:  2px solid gold; */
-        width:  48%;
-        float: left;
-        & .p_title_container {
-          margin-bottom:  80px;
-           & .p_title {
-            margin-bottom:  20px;
-           }
-        }
-        & .p_role_container {
-          
-        }
-      }
+      & .divider_line {
 
-      & .right_panel {
-        float: right;
-        width:  45%;
-        /* border:  1px solid teal; */
-        position: relative;
-        & .p_main_thumb_container {
-          height: 300px;
+        height:  1px;
+        width:  100%;
+        display: block;
+        background-color: var(--ojtl2);
+      }
+    }
+
+
+
+
+
+    & .p_thumb_grid {
+      /* border:  1px solid red; */
+      width:  100%;
+      /* height: 620px; */
+      position: relative;
+      padding:  0;
+      & ul {
+        /* border:  1px solid green; */
+        max-width:  1460px;
+        margin:  auto;
+        padding:  0;
+        display: flex;
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        & li {
+          /* border:  1px solid purple; */
+          flex: 1;
+          display: block;
+          & .gallery_title {
+            display: block;
+            width:  100%;
+            height: 30px;
+            font-size: 12px;
+            text-align: center;
+            color:  var(--ojtl4);
+          }
+          & .img_container {
+            width:  320px;
+            height:  568px;
+            position: relative;
+            margin:  auto;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
     }
 
 
-    & .p_features_container {
+/*     & .p_features_container {
       width:  40%;
       margin-bottom:  180px;
-      /* float:  left; */
       & ol {
         counter-reset: my-badass-counter;
         padding:  0;
         margin:  0;
-        /* margin-left:  -20px; */
         & li {
           list-style: none;
           margin-bottom:  10px;
@@ -76,7 +163,7 @@
           }
         }
       }
-    }
+    } */
 
   }
 }
@@ -113,84 +200,3 @@ body.mosaic {
 
 
 
-body.mcom {
-  & .primary_content_container {
-
-    & .projects_inner_container {
-      & .p_section_one {
-        margin-top: 260px;
-        & .p_title {
-          width:  390px;
-        }
-        & .p_main_thumb_container {
-          & .p_img_1noshadow {
-            height:  714px;
-            width:  298px;
-            position: absolute;
-            top:  -130px;
-            left:  50%;
-            margin-left:  -149px;
-            background-image: url("/images/project/mcom/section_1_iphone_thumb@2x.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            &::before {
-              content:  " ";
-              width:  2px;
-              transform: rotate(5deg);
-              position: absolute;
-              display: block;
-              background-color: var(--ojabstractLines);
-              box-shadow: 0 0 0 1px color(var(--ojtl) shade(4%) a(50%));
-              border-radius: 1px;
-              height: 760px;
-              left:  50%;
-              top:  -30px;
-              z-index: -10;
-            }
-          }
-          & .p_dots_box {
-            height:  200px;
-            width:  80%;
-            position: absolute;
-            bottom:  0;
-            left: 10%;
-            z-index: -10;
-          }
-        }
-      }
-
-      & .mcom_p_section1 {
-        margin-top: 300px;
-        /* background-color: yellow; */
-      }
-      & .mcom_p_section2 {
-        border:  20px gold;
-        display: flex;
-        overflow: hidden;
-        height:  600px;
-        margin-top: 200px;
-        & .section_left_full_width {
-          border:  1px solid red;
-          flex: 2;
-          background-color: white;
-          & .s_l_inner_contain {
-          }
-        }
-        & .section_right_full_width {
-          flex: 1;
-          border:  1px solid blue;
-          /* background-color: blue; */
-        }
-        /* background-color: purple; */
-      }
-      & .mcom_p_section3 {
-        margin-top: 200px;
-        /* background-color: plum; */
-
-      }
-    }
-
-
-  }
-}

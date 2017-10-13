@@ -1,12 +1,12 @@
 
 .index_container {
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
   margin: 0 auto;
   position: relative;
   padding:  10px;
   max-width: 1264px;
   & .index_inner_container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 700px;
     position: relative;
     & .index_text_container {
@@ -17,6 +17,8 @@
       & p {
         color: rgba(255,255,255,1);
         text-shadow: 0 1px 0 color(var(--ojtl1));
+        font-size: 18px;
+        line-height: 1.7;
       }
     }
 

@@ -1,36 +1,38 @@
 {{ define "main" }}
 
-<!-- <div class="project_header">
+<div id="project_header" class="hide">
   <div class="project_inner_header">
     <a class="project_home_link" href="{{ $.Site.BaseURL }}">&#x2039;&#x2002;Back To Homepage </a>
+    <a id="go_top_btn" > ⇧ </a>
   </div>
-</div> -->
+    
+</div>
 
 
 <div class="projects_inner_container">
 
-  <div class="p_section_one project_section_container p_s_max_width">
+  <div class="p_section_top flex_container p_s_max_width">
 
-    <div class= "left_panel">
+    <div class= "left_panel flex">
       <div class="p_title_container">
-       <h1 class="p_title">{{ .Title }}</h1>
-       <p class="p_info">{{ .Description }}</p>
+       <h1 class="p_title sr_direction_right">{{ .Title }}</h1>
+       <p class="p_info sr_direction_right sr_delay_100">{{ .Description }}</p>
       </div>
 
       <div class="p_role_container">
-       <h3 class="p_role_title p_section_title">My Role</h3>
-       <p class="p_role_content">{{ .Params.p_role_content}}</p>
+       <h3 class="p_role_title p_section_title sr_direction_right sr_delay_100">My Role</h3>
+       <p class="p_role_content sr_direction_right sr_delay_200">{{ .Params.p_role_content}}</p>
       </div>
     </div>
 
-    <div class="right_panel">
-      <div class="p_main_thumb_container">
+    <div class="right_panel flex">
+      <div class="p_main_thumb_container ">
         {{ range $value := .Params.p_main_thumb  }}
           
           {{ if eq $value "1noshadow" }} 
             <div class="p_img_{{$value}}"></div>
           {{ else if eq $value "dots" }}
-            <div class="p_{{$value}}_box oj_dots"></div>
+            <div class="p_{{$value}}_box oj_dots sr_direction_left"></div>
           {{ else}}
             <div class="p_img_{{$value}}">
               <div class="img_shadow"></div>
@@ -49,6 +51,14 @@
 </div> <!-- end .index_project_desc -->
 
   {{.Content}}
+
+  <div class="project_section_container project_lister_container p_s_max_width">
+    <div class="project_bottom_divider">
+      <span class="divider_line"></span>
+      <p> Check out a different project </p>
+    </div>
+    {{ partial "project_lister" . }}
+  </div>
 
 </div> <!-- end .projects_inner_container [Template: list] -->
 {{end}}

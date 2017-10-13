@@ -3,10 +3,6 @@
  */
 
 :root {
-
-
-  
-  
   --ojrd:  #4583D8;
   --ojrd:  #AB5153;
   --ojrd:  #C5463E;
@@ -21,6 +17,7 @@
 
   --ojabstractLines:  #E3E6E5;
 
+  --ojtl0: #E1E6E4;
   --ojtl: #C6CCCA;
   --ojtl1: #BFC7C4;
   --ojtl2: #B5BDBA;
@@ -37,6 +34,8 @@
 
   --oj_maxwidth:  1264px;
 
+
+  --oj_base_font_size:  16px;
 }
 
 
@@ -46,9 +45,9 @@ body{
   background: var(--ojtl);
   color: var(--ojtl8);
   margin: auto;
-  font-size: 18px;
+  font-size: --var(--oj_base_font_size);
   font-weight: 300;
-
+  overflow-x: hidden;
   & * {
     /* border:  1px solid; */
   }
@@ -67,6 +66,7 @@ body{
     margin:  0;
     font-size: 54px;
     line-height: 62px;
+    margin-bottom: 18px;
   }
   & h2 {
     /* border:  1px solid green; */
@@ -74,19 +74,23 @@ body{
     color:  color(var(--ojtl8));
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 18px;
   }
-  & h3 {
+  & h3, & .h3_styling {
     /* border:  1px solid red; */
     font-size: 18px;
     line-height: 18px;
     color:  color(var(--ojtl8));
     font-weight: 300;
+    margin-bottom:  14px;
   }
-  & p {
-    font-size: 18px;
+  & p, & .p_styling {
+    font-size: var(--oj_base_font_size);
     color: var(--ojtl6);
-    line-height: 28px;
+    line-height: 26px;
     font-weight: 300;
+    max-width: 460px;
+    /* border:  2px solid red; */
   }
 
   & .oj_dots {
@@ -127,4 +131,19 @@ body{
     background-color: blue;
   }
 
+  & .flex_container {
+    display: flex;
+    & .flex {
+      flex: 1;
+    }
+  }
+
+
+  & .p_s_max_width {
+    max-width:  var(--oj_maxwidth);
+    margin-left:  auto;
+    margin-right:  auto;
+  }
+
+  
 }

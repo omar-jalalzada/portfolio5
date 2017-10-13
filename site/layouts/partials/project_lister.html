@@ -1,55 +1,113 @@
-{{ range .Data.Pages }}
 
-  <div class="index_project_list index_project_{{.Title}} {{ .Params.indexLayout }}">
-  
-    <div class="index_project_list_inner_container">
-     
-      <div class="index_project_thumb">
-        <div class="project_thumb p_t_{{.Title}}">
+{{ if eq .Section "project"}}
 
-          
-          {{ range $index, $values := .Params.index_thumb  }}
-            {{ if in $values "dots" }}
-              <div class="img_container dotted_box oj_dots {{$values}}"></div>
-            {{ else if in $values "secondary_thumb" }}
-              <div class="img_container img{{add $index 1}}_container {{$values}}" alt="{{$.Page.Title}} Thumbnail {{add $index 1}}">
-                <div class="img_thumb"></div>
-              </div>
-            {{else}}
-              <div class="img_container img{{add $index 1}}_container {{$values}}" alt="{{$.Page.Title}} Thumbnail {{add $index 1}}">
-                <div class="img_shadow"></div>
-                <div class="img_thumb"></div>
-              </div>
-            {{end}}
-          {{ end }}
+  {{ range where .Site.Pages ".Title" .Params.p_main_footer }}
+    <div class="index_project_list index_project_{{.Title}} ">
+    
+      <div class="index_project_list_inner_container flex_container">
+       
+        <div class="index_project_thumb flex">
+          <div class="project_thumb p_t_{{.Title}}">
+
+            
+            {{ range $index, $values := .Params.index_thumb  }}
+              {{ if in $values "dots" }}
+                <div class="img_container dotted_box oj_dots {{$values}}"></div>
+              {{ else if in $values "secondary_thumb" }}
+                <div class="img_container img{{add $index 1}}_container {{$values}}" alt="{{$.Page.Title}} Thumbnail {{add $index 1}}">
+                  <div class="img_thumb"></div>
+                </div>
+              {{else}}
+                <div class="img_container img{{add $index 1}}_container {{$values}}" alt="{{$.Page.Title}} Thumbnail {{add $index 1}}">
+                  <div class="img_shadow"></div>
+                  <div class="img_thumb"></div>
+                </div>
+              {{end}}
+            {{ end }}
 
 
-        </div>
-      </div> 
-      <div class="index_project_desc sr_direction_up">
-        <h2 class='index_project_title '>{{ .Title }}</h2>
-        <p class='index_project_info'>{{ .Description }}</p>
-        <div class="index_project_secondary">
-          <div class='index_project_platform'>Platform: {{ .Params.Platform }}</div>
-          <div class='index_project_role'>Role: {{ .Params.Role }}</div>
+          </div>
         </div>
 
+        <div class="index_project_desc sr_direction_up flex">
+          <h2 class='index_project_title '>{{ .Title }}</h2>
+          <p class='index_project_info'>{{ .Description }}</p>
+          <div class="index_project_secondary">
+            <div class='index_project_platform'>Platform: {{ .Params.Platform }}</div>
+            <div class='index_project_role'>Role: {{ .Params.Role }}</div>
+          </div>
 
-        <a class="hover_btn"> 
 
-        </a>
+          <a class="hover_btn"> 
 
-        <a class="index_project_link" href="{{ .URL }}">
-          <span class="text"> View Project </span>
-          <span class="t_b"></span>
-          <span class="r_b"></span>
-          <span class="l_b"></span>
-          <span class="b_b"></span>
-          <span class="b_b2"></span>
-        </a>
-      </div> <!-- end .index_project_desc -->
+          </a>
 
-    </div> <!-- end .index_project_list_inner_container -->
+          <a class="index_project_link" href="{{ .URL }}">
+            <span class="text"> View Project </span>
+            <span class="t_b"></span>
+            <span class="r_b"></span>
+            <span class="l_b"></span>
+            <span class="b_b"></span>
+            <span class="b_b2"></span>
+          </a>
+        </div> <!-- end .index_project_desc -->
 
-  </div><!-- end .index_project_list -->
-{{ end }}
+      </div> <!-- end .index_project_list_inner_container -->
+    </div><!-- end .index_project_list -->
+  {{end}}
+
+
+{{else}}
+
+  {{ range where .Site.Pages ".Kind" "page" }}
+    <div class="index_project_list index_project_{{.Title}} {{if $.IsHome}} {{ .Params.indexLayout }} {{end}} ">
+      <div class="index_project_list_inner_container flex_container">
+        <div class="index_project_thumb flex">
+          <div class="project_thumb p_t_{{.Title}}">
+
+            
+            {{ range $index, $values := .Params.index_thumb  }}
+              {{ if in $values "dots" }}
+                <div class="img_container dotted_box oj_dots {{$values}}"></div>
+              {{ else if in $values "secondary_thumb" }}
+                <div class="img_container img{{add $index 1}}_container {{$values}}" alt="{{$.Page.Title}} Thumbnail {{add $index 1}}">
+                  <div class="img_thumb"></div>
+                </div>
+              {{else}}
+                <div class="img_container img{{add $index 1}}_container {{$values}}" alt="{{$.Page.Title}} Thumbnail {{add $index 1}}">
+                  <div class="img_shadow"></div>
+                  <div class="img_thumb"></div>
+                </div>
+              {{end}}
+            {{ end }}
+
+
+          </div>
+        </div> 
+        <div class="index_project_desc sr_direction_up flex">
+          <h2 class='index_project_title '>{{ .Title }}</h2>
+          <p class='index_project_info'>{{ .Description }}</p>
+          <div class="index_project_secondary">
+            <div class='index_project_platform'>Platform: {{ .Params.Platform }}</div>
+            <div class='index_project_role'>Role: {{ .Params.Role }}</div>
+          </div>
+
+
+          <a class="hover_btn"> 
+
+          </a>
+
+          <a class="index_project_link" href="{{ .URL }}">
+            <span class="text"> View Project </span>
+            <span class="t_b"></span>
+            <span class="r_b"></span>
+            <span class="l_b"></span>
+            <span class="b_b"></span>
+            <span class="b_b2"></span>
+          </a>
+        </div> <!-- end .index_project_desc -->
+      </div> <!-- end .index_project_list_inner_container -->
+    </div><!-- end .index_project_list -->
+  {{ end }}
+
+{{end}}
