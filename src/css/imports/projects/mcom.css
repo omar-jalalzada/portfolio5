@@ -62,8 +62,17 @@ body.mcom {
         /* background-color: yellow; */
         /* margin-top: 200px; */
         & .grid_mcom_feature {
-          & .inner_img_container2 {
-            display: none;
+          & .gallery_1 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/mcom/mcom_home.png");
+          }
+          & .gallery_2 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/mcom/mcom_nav_category.png");
+          }
+          & .gallery_3 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/mcom/mcom_nav_men.png");
+          }
+          & .gallery_4 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/mcom/mcom_product_tile.png");
           }
         }
       }
@@ -80,11 +89,8 @@ body.mcom {
           margin:  auto;
         }
         & .section_left {
-           /* border:  1px solid lime; */
           position: relative;
           flex: 2;
-
-
           & .section_light_bg {
             background-color: var(--ojtl0);
             border:  1px solid var(--ojtl2);
@@ -117,22 +123,15 @@ body.mcom {
         & .section_right {
           /* border:  2px solid purple; */
           position: relative;
-
-          
           & .s_r_inner_container {
             /* background-color: red; */
             position: absolute;
             left:  -310px;
             top:  265px;
-            
             & .img_row {
               margin:  0 0 30px 0;
               height: 220px;
               width:  1180px;
-
-              &.img_row2 {
-                margin-left:  120px;
-              }
               & .img_container {
                 margin-right: 30px;
                 width:  510px;
@@ -141,6 +140,32 @@ body.mcom {
                 border-radius: 3px;
                 position: relative;
               }
+              &.img_row1 {
+                & .img_1 .img_thumb{
+                  background-image: url("/images/project/mcom/mcom_process_1.png");
+                }
+                & .img_2 .img_thumb{
+                  background-image: url("/images/project/mcom/mcom_process_4.png");
+                }
+              }
+              &.img_row2 {
+                margin-left:  120px;
+                & .img_1 .img_thumb{
+                  background-image: url("/images/project/mcom/mcom_process_3.png");
+                }
+                & .img_2 .img_thumb{
+                  background-image: url("/images/project/mcom/mcom_process_2.png");
+                }
+              }
+              &.img_row3 {
+                & .img_1 .img_thumb{
+                  background-image: url("/images/project/mcom/mcom_process_5.png");
+                }
+                & .img_2 .img_thumb{
+                  background-image: url("/images/project/mcom/mcom_process_6.png");
+                }
+              }
+
             }
           }
         }
@@ -155,32 +180,58 @@ body.mcom {
       & .mcom_p_section3 {
         /* margin-top: 200px; */
         & .grid_mcom_lists {
-          & .gallery_1 {
+          & .img_container {
+            height:  650px;
+          }
+          & .gallery_1 .img_container {
+            
+            & .inner_img_container1 .img_thumb {
+              background-image: url("/images/project/mcom/mcom_list_1.png");
+            }
+            & .inner_img_container2 {
+              display: none;
+            }
           }
           & .gallery_2 {
+            /* background-color:  red; */
             & .inner_img_container1 {
-              height: 198px;
+              height: 243px;
               position: relative;
+              & .img_thumb {
+                background-image: url("/images/project/mcom/mcom_list_2.png");
+              }
             }
             & .inner_img_container2 {
               display: block;
-              margin-top:  90px;
-              height: 280px;
+              margin-top:  50px;
+              height: 359px;
               position: relative;
+              & .img_thumb {
+                background-image: url("/images/project/mcom/mcom_list_3.png");
+              }
             }
           }
           & .gallery_3 {
+            & .inner_img_container1 .img_thumb {
+              background-image: url("/images/project/mcom/mcom_list_4.png");
+            }
           }
           & .gallery_4 {
             & .inner_img_container1 {
-              height: 280px;
+              height: 363px;
               position: relative;
+              & .img_thumb {
+                background-image: url("/images/project/mcom/mcom_list_5.png");
+              }
             }
             & .inner_img_container2 {
               display: block;
-              margin-top:  90px;
-              height: 198px;
+              margin-top:  46px;
+              height: 239px;
               position: relative;
+              & .img_thumb {
+                background-image: url("/images/project/mcom/mcom_list_6.png");
+              }
             }
           }
         }
@@ -192,22 +243,50 @@ body.mcom {
       /********************************/
       & .mcom_p_section4 {
         /* margin-top: 200px; */
-        & .grid_mcom_lists {
+        & .grid_mcom_pdp {
+          & .img_container {
+            height:  876px;
+          }
           & .gallery_1 {
+            & .inner_img_container1 {
+              height: 582px;
+              position: relative;
+              & .img_thumb {
+                background-image: url("/images/project/mcom/mcom_pdp_1.png");
+              }
+            }
+            & .inner_img_container2 {
+              display: block;
+              margin-top:  86px;
+              height: 208px;
+              position: relative;
+              & .img_thumb {
+                background-image: url("/images/project/mcom/mcom_pdp_2.png");
+              }
+            }
           }
           & .gallery_2 {
+            & .inner_img_container1 .img_thumb {
+              background-image: url("/images/project/mcom/mcom_pdp_3.png");
+            }
+          }
+          & .gallery_3 {
             & .inner_img_container1 {
-              height: 198px;
+              height: 208px;
               position: relative;
+              & .img_thumb {
+                background-image: url("/images/project/mcom/mcom_pdp_4.png");
+              }
             }
             & .inner_img_container2 {
               display: block;
               margin-top:  90px;
-              height: 280px;
+              height: 567px;
               position: relative;
+              & .img_thumb {
+                background-image: url("/images/project/mcom/mcom_pdp_5.png");
+              }
             }
-          }
-          & .gallery_3 {
           }
           & .gallery_4 {
             display: none;
@@ -224,25 +303,18 @@ body.mcom {
         /* margin-top: 200px; */
         /* background-color: #000; */
         /* padding:  100px 0; */
-        & .grid_mcom_lists {
-          & .gallery_1 {
+        & .grid_mcom_bloomies {
+          & .gallery_1 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/mcom/mcom_bcom_1.png");
           }
-          & .gallery_2 {
-            & .inner_img_container1 {
-              height: 198px;
-              position: relative;
-            }
-            & .inner_img_container2 {
-              display: block;
-              margin-top:  90px;
-              height: 280px;
-              position: relative;
-            }
+          & .gallery_2 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/mcom/mcom_bcom_2.png");
           }
-          & .gallery_3 {
+          & .gallery_3 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/mcom/mcom_bcom_3.png");
           }
-          & .gallery_4 {
-            display: none;
+          & .gallery_4 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/mcom/mcom_bcom_4.png");
           }
         }
       }

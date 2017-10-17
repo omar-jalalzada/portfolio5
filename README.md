@@ -1,3 +1,3 @@
 # Omar Jalalzada's Portfolio
 
-Built using [Hugo](https://gohugo.io/) with [Victor Hugo's](https://github.com/netlify/victor-hugo) boilerplate which utilizes Gulp + Webpack as the asset pipeline and its setup to use Post [cssnext](http://cssnext.io/features/) and babel for CSS and JavaScript. I'm also using [Adobe Typekit](https://typekit.com) for fonts and [Netflify](https://www.netlify.com/) to deployment.
+Built using [Hugo](https://gohugo.io/) with [Victor Hugo's](https://github.com/netlify/victor-hugo) boilerplate which utilizes Gulp + Webpack as the asset pipeline and its setup to use Post [cssnext](http://cssnext.io/features/) and babel for CSS and JavaScript. I'm also using [Adobe Typekit](https://typekit.com) for fonts and [Netflify](https://www.netlify.com/) for deployment.

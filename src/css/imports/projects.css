@@ -129,9 +129,12 @@
           }
           & .img_container {
             width:  320px;
-            height:  568px;
+            height:  567px;
             position: relative;
             margin:  auto;
+            & .inner_img_container2 {
+              display: none;
+            }
           }
           &:last-child {
             margin-right: 0;
