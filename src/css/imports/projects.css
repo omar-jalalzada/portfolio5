@@ -96,8 +96,6 @@
 
 
 
-
-
     & .p_thumb_grid {
       /* border:  1px solid red; */
       width:  100%;
@@ -144,7 +142,7 @@
     }
 
 
-/*     & .p_features_container {
+    & .p_features_container {
       width:  40%;
       margin-bottom:  180px;
       & ol {
@@ -166,40 +164,9 @@
           }
         }
       }
-    } */
+    }
 
   }
 }
-
-
-
-
-
-body.mosaic {
-
-  & .p_main_thumb_container {
-
-    & .p_img_1 {
-      height:  714px;
-      width:  298px;
-      position: absolute;
-      top:  -100px;
-      left:  0%;
-      & .img_thumb {
-        background-color: purple;
-
-      }
-    }
-    & .p_dots_box {
-      height:  100%;
-      width:  200px;
-      position: absolute;
-      top:  10%;
-      left:  -50px;
-    }
-  }
-}
-
-
 
 

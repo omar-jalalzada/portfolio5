@@ -6,13 +6,13 @@
 @import "imports/base.css";
 @import "imports/index.css";
 @import "imports/projects.css";
-@import "imports/projects.css";
 @import "imports/project_shortcodes.css";
 @import "imports/project_lister.css";
 @import "imports/header.css";
 @import "imports/footer.css";
 
 @import "imports/projects/mcom.css";
+@import "imports/projects/mosaic.css";
 /* @import "imports/mobile.css"; */
 
 .mobile_only {

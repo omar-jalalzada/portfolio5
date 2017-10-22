@@ -47,13 +47,6 @@ sr.reveal('.sr_delay_700', { delay: 700 });
 
 
 
-// INDEX PAGE
-document.addEventListener("DOMContentLoaded", function(){
-  var sparky = document.getElementById("sparky")
-  if (sparky != null && sparky !== undefined) {
-    sparky.className += " loaded";
-  }
-});
 
 
 
@@ -65,8 +58,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-
-// // // When the user scrolls down 20px from the top of the document, show the button
+// // When the user scrolls down 20px from the top of the document, show the button
 // window.onscroll = function() {appearOnScroll()};
 
 // function appearOnScroll() {
@@ -77,11 +69,11 @@ document.addEventListener("DOMContentLoaded", function(){
 //     }
 // }
 
-// // When the user clicks on the button, scroll to the top of the document
-// // function topFunction() {
-// //     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
-// //     document.documentElement.scrollTop = 0; // For IE and Firefox
-// // }
+// When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+//     document.documentElement.scrollTop = 0; // For IE and Firefox
+// }
 
 
 
@@ -89,74 +81,125 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-// // first add raf shim
-// // http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
-// window.requestAnimFrame = (function(){
-//   return  window.requestAnimationFrame       ||
-//           window.webkitRequestAnimationFrame ||
-//           window.mozRequestAnimationFrame    ||
-//           function( callback ){
-//             window.setTimeout(callback, 1000 / 60);
-//           };
-// })();
-
-// // main function
-// function scrollToY(scrollTargetY, speed, easing) {
-//     // scrollTargetY: the target scrollY property of the window
-//     // speed: time in pixels per second
-//     // easing: easing equation to use
-
-//     var scrollY = window.scrollY || document.documentElement.scrollTop,
-//         scrollTargetY = scrollTargetY || 0,
-//         speed = speed || 2000,
-//         easing = easing || 'easeOutSine',
-//         currentTime = 0;
-
-//     // min time .1, max time .8 seconds
-//     var time = Math.max(.1, Math.min(Math.abs(scrollY - scrollTargetY) / speed, .8));
-
-//     // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
-//     var easingEquations = {
-//             easeOutSine: function (pos) {
-//                 return Math.sin(pos * (Math.PI / 2));
-//             },
-//             easeInOutSine: function (pos) {
-//                 return (-0.5 * (Math.cos(Math.PI * pos) - 1));
-//             },
-//             easeInOutQuint: function (pos) {
-//                 if ((pos /= 0.5) < 1) {
-//                     return 0.5 * Math.pow(pos, 5);
-//                 }
-//                 return 0.5 * (Math.pow((pos - 2), 5) + 2);
-//             }
-//         };
-
-//     // // add animation loop
-//     // function tick() {
-//     //     currentTime += 1 / 60;
-
-//     //     var p = currentTime / time;
-//     //     var t = easingEquations[easing](p);
-
-//     //     if (p < 1) {
-//     //         requestAnimFrame(tick);
-
-//     //         window.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
-//     //     } else {
-//     //         console.log('scroll done');
-//     //         window.scrollTo(0, scrollTargetY);
-//     //     }
-//     // }
-
-//     // // call it once to get started
-//     // tick();
-// };
-
-// // scroll it!
 
 
-// var el = document.getElementById("go_top_btn");
-// el.addEventListener("click", scrollToY(0, 1500, 'easeInOutQuint'), false);
 
+
+
+document.addEventListener("DOMContentLoaded", function(){
+  // INDEX PAGE  
+  var sparky = document.getElementById("sparky")
+  if (sparky != null && sparky !== undefined) {
+    sparky.className += " loaded";
+  }
+
+
+
+
+
+  // // first add raf shim
+  // // http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+  // window.requestAnimFrame = (function(){
+  //   return  window.requestAnimationFrame       ||
+  //           window.webkitRequestAnimationFrame ||
+  //           window.mozRequestAnimationFrame    ||
+  //           function( callback ){
+  //             window.setTimeout(callback, 1000 / 60);
+  //           };
+  // })();
+
+  // // main function
+  // function scrollToY(scrollTargetY, speed, easing) {
+  //     // scrollTargetY: the target scrollY property of the window
+  //     // speed: time in pixels per second
+  //     // easing: easing equation to use
+
+  //     var scrollY = window.scrollY || document.documentElement.scrollTop,
+  //         scrollTargetY = scrollTargetY || 0,
+  //         speed = speed || 2000,
+  //         easing = easing || 'easeOutSine',
+  //         currentTime = 0;
+
+  //     // min time .1, max time .8 seconds
+  //     var time = Math.max(.1, Math.min(Math.abs(scrollY - scrollTargetY) / speed, .8));
+
+  //     // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
+  //     var easingEquations = {
+  //             easeOutSine: function (pos) {
+  //                 return Math.sin(pos * (Math.PI / 2));
+  //             },
+  //             easeInOutSine: function (pos) {
+  //                 return (-0.5 * (Math.cos(Math.PI * pos) - 1));
+  //             },
+  //             easeInOutQuint: function (pos) {
+  //                 if ((pos /= 0.5) < 1) {
+  //                     return 0.5 * Math.pow(pos, 5);
+  //                 }
+  //                 return 0.5 * (Math.pow((pos - 2), 5) + 2);
+  //             }
+  //         };
+
+  //     // // add animation loop
+  //     // function tick() {
+  //     //     currentTime += 1 / 60;
+
+  //     //     var p = currentTime / time;
+  //     //     var t = easingEquations[easing](p);
+
+  //     //     if (p < 1) {
+  //     //         requestAnimFrame(tick);
+
+  //     //         window.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
+  //     //     } else {
+  //     //         console.log('scroll done');
+  //     //         window.scrollTo(0, scrollTargetY);
+  //     //     }
+  //     // }
+
+  //     // // call it once to get started
+  //     // tick();
+  // };
+
+  // var el = document.getElementById("go_top_btn");
+  // el.addEventListener("click", scrollToY(0, 1500, 'easeInOutQuint'), false);
+
+
+
+
+
+
+
+
+
+  var hover_container = document.getElementById("mosaic_image_wrapper");
+
+  
+  if (hover_container != null && hover_container !== undefined) {
+
+    hover_container.addEventListener("mouseover", function(){
+      this.classList.add("hovered");
+    });
+      
+    hover_container.addEventListener("mouseout", function(){
+      this.classList.remove("hovered");
+    });
+
+    var pop_up = document.getElementsByClassName("feature_pop_up");
+    var i;
+
+    for (i = 0; i < pop_up.length; i++) {
+
+        pop_up[i].addEventListener("mouseover", function(){
+          this.classList.add("hovered");
+        });
+        pop_up[i].addEventListener("mouseout", function(){
+          this.classList.remove("hovered");
+        });
+    }
+
+
+  }
+
+});
 
 
