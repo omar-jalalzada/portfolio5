@@ -43,7 +43,8 @@ sr.reveal('.sr_delay_500', { delay: 500 });
 sr.reveal('.sr_delay_600', { delay: 600 });
 sr.reveal('.sr_delay_700', { delay: 700 });
 
-// sr.reveal('.grid_gallery', {duration: 1000 }, 500);
+sr.reveal('.flat_grid .img_container', 100);
+sr.reveal('.p_features_container li', { origin: 'left' }, 300);
 
 
 
@@ -171,18 +172,21 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-  var hover_container = document.getElementById("mosaic_image_wrapper");
+  var hover_container = document.getElementsByClassName("image_overlay_wrapper");
 
   
   if (hover_container != null && hover_container !== undefined) {
 
-    hover_container.addEventListener("mouseover", function(){
-      this.classList.add("hovered");
-    });
-      
-    hover_container.addEventListener("mouseout", function(){
-      this.classList.remove("hovered");
-    });
+    for (i = 0; i < hover_container.length; i++) {
+        
+        hover_container[i].addEventListener("mouseover", function(){
+          this.classList.add("hovered");
+        });
+        hover_container[i].addEventListener("mouseout", function(){
+          this.classList.remove("hovered");
+        });
+    }
+
 
     var pop_up = document.getElementsByClassName("feature_pop_up");
     var i;
