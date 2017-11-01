@@ -92,7 +92,7 @@ body.mcom {
           position: relative;
           flex: 2;
           & .section_light_bg {
-            background-color: var(--ojtl0);
+            background-color: var(--ojtl01);
             border:  1px solid var(--ojtl2);
             position: absolute;
             right:  0;
@@ -327,7 +327,5 @@ body.mcom {
 
 
     }
-
-
   }
 }

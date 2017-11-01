@@ -12,7 +12,7 @@
     & .index_text_container {
       /* border:  1px solid blue; */
       position: absolute;
-      max-width: 420px;
+      max-width: 480px;
       top:  53%;
       & p {
         color: rgba(255,255,255,1);

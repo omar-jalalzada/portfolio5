@@ -17,7 +17,8 @@
 
   --ojabstractLines:  #E3E6E5;
 
-  --ojtl0: #E1E6E4;
+  --ojtl01: #e2e4e3;
+  --ojtl0: #CDD1D0;
   --ojtl: #C6CCCA;
   --ojtl1: #BFC7C4;
   --ojtl2: #B5BDBA;
@@ -27,6 +28,7 @@
   --ojtl6: #6C7572;
   --ojtl7: #545C59;
   --ojtl8: #404745;
+  --ojtl9: #383d3c;
 
 
   --oj_w : 84px;

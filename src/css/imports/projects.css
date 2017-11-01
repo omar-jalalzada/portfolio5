@@ -1,6 +1,9 @@
+
+body.projects {
+  background: var(--ojtl0);
+}
+
 .projects_inner_container {
-
-
 
 
   & .p_section_top {
@@ -79,7 +82,7 @@
       margin-bottom: 100px;
       & p {
         font-size: 12px;
-        background-color: var(--ojtl);
+        background: var(--ojtl0);
         width:  200px;
         margin:  0 auto;
         text-align: center;
@@ -290,6 +293,92 @@
   }
 
 
+
+
 }
 
 
+
+
+.animation_pulsate {
+    -webkit-animation: pulsate 4s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+}
+@-webkit-keyframes pulsate {
+    0% { 
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {  
+      opacity: .2;
+      transform: scale(0);
+    }
+    80% {  
+      opacity: .8;
+    }
+    96% {
+    }
+    100% { 
+      transform: scale(2);
+      opacity: 0;
+    }
+}
+/* .animation_beat{
+    -webkit-animation: beat 5s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+}
+@-webkit-keyframes beat {
+    0% { 
+      box-shadow: 0 3px 8px rgba(0,0,0,0.5), 
+                  0 1px 1px rgba(0,0,0,0.1), 
+                  inset 0 1px 1px rgba(255,255,255,.3);
+    }
+
+    75% { 
+      box-shadow: 0 8px 14px rgba(0,0,0,0.5), 
+                  0 1px 1px rgba(0,0,0,0.1), 
+                  inset 0 1px 1px rgba(255,255,255,.3);
+    }
+
+    100% { 
+      box-shadow: 0 3px 8px rgba(0,0,0,0.5), 
+                  0 1px 1px rgba(0,0,0,0.1), 
+                  inset 0 1px 1px rgba(255,255,255,.3);
+    }
+
+} */
+
+
+.animation_ring {
+    animation: ring 3s ease-in;
+    animation-iteration-count: infinite; 
+}
+@-webkit-keyframes ring {
+    0% { 
+      /* transform: scale(.8); */
+      opacity: 0;
+      box-shadow: 0 0 0px 0px rgba(0,0,0,0.2);
+      /* box-shadow: 0 0 40px 2px var(--ojrd); */
+    }
+    60% { 
+      /* transform: scale(.8); */
+      transform: scale(1);
+      opacity: .2;
+      /* box-shadow: 0 0 40px 2px var(--ojrd); */
+      
+    }
+
+    80% { 
+      /* transform: scale(1); */
+      opacity: 1;
+      box-shadow: 0 0 0px 2px rgba(0,0,0,0.2);
+      
+    }
+
+
+    100% { 
+      transform: scale(1.3);
+      opacity: 0;
+      box-shadow: 0 0 2px 0px rgba(0,0,0,0.2);
+    }
+}

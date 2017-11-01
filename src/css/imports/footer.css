@@ -4,11 +4,11 @@ footer {
   /* text-align: center; */
   /* padding: 14px 0; */
   width:  100%;
-  background-color: color(var(--ojtl8));
+  background-color: color(var(--ojtl9));
   /* position: fixed; */
   bottom:  0;
   left:  0;
-  box-shadow: 0 -1px 0 0 rgba(255,255,255,.1),
+  box-shadow: 0 -1px 0 0 rgba(255,255,255,.01),
               inset 0 0 2px 0px rgba(0,0,0,.2);
   font-size:  12px;
   font-weight: 100;
@@ -16,8 +16,6 @@ footer {
   position: relative;
 
   & .footer_inner_container {
-
-
     height:  100%;
     & .footer_left{
       position: relative;

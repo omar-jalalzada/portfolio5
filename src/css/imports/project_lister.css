@@ -144,7 +144,6 @@
           & .img_container{
             position: absolute;
             & .img_thumb {
-
             }
             &.secondary_thumb {
               & .img_thumb { 
@@ -218,6 +217,7 @@
                 height: 580px;
                 left:  50%;
                 top:  -55px;
+                z-index: -1;
               }
             }
             & .dotted_box {
@@ -256,9 +256,10 @@
                 background-color: var(--ojabstractLines);
                 box-shadow: 0 0 0 1px color(var(--ojtl) shade(4%) a(50%));
                 border-radius: 1px;
-                height: 580px;
+                height: 600px;
                 left:  50%;
-                top:  -55px;
+                top:  -50px;
+                z-index: -1;
               }
             }
             & .dotted_box {
@@ -299,6 +300,7 @@
                 height: 500px;
                 left:  50%;
                 top:  -55px;
+                 z-index: -1;
               }
             }
             & .dotted_box {
