@@ -11,50 +11,55 @@ body.wfl {
       & .p_section_top {
         & .p_main_thumb_container {
           height: 100%;
-          
           & .p_img_1 {
-            height:  300px;
-            width:  300px;
+            height:  378px;
+            width:  315px;
             position: absolute;
-            top:  100px;
-            left:  20px;
-            & .img_thumb { 
-              background-color: #ddd;
-              /* background-image: url("/images/project/mosaic/mosaic_top_section_grid_widget.png"); */
-            }
-
-          }
-          & .p_img_2 {
-            height:  500px;
-            width:  500px;
-            position: absolute;
-            top:  0px;
-            left:  140px;
+            top:  -100px;
+            left:  16%;
             & .img_thumb {
               background-color: #eee; 
-              /* background-image: url("/images/project/mosaic/mosaic_top_section_search.png"); */
+               background-image: url("/images/project/wfl/wfl_top_section_flightcard.png");
             }
-            &::before {
-              content:  " ";
-              width:  2px;
-              transform: rotate(5deg);
-              position: absolute;
-              display: block;
-              background-color: var(--ojabstractLines);
-              box-shadow: 0 0 0 1px color(var(--ojtl) shade(4%) a(50%));
-              border-radius: 1px;
-              height: 660px;
-              left:  60%;
-              top:  -60px;
-              z-index: -10;
+          }
+          & .p_img_2 {
+            height: 256px;
+            width: 325px;
+            position: absolute;
+            bottom:  -130px;
+            left:  31%;
+            & .img_thumb { 
+              background-color: #ddd;
+              background-image: url("/images/project/wfl/wfl_card_breakfast_bundle.png"); 
             }
-
+          }
+          & .p_img_3 {
+            height: 200px;
+            width: 157px;
+            position: absolute;
+            bottom:  -74px;
+            left:  3%;
+            & .img_thumb {
+              background-color: #eee; 
+              background-image: url("/images/project/wfl/wfl_card_iphone_cable.png");
+            }
+          }
+          & .p_img_4 {
+            height: 200px;
+            width: 157px;
+            position: absolute;
+            top:  78px;
+            left:  69%;
+            & .img_thumb {
+              background-color: #eee; 
+              background-image: url("/images/project/wfl/wfl_card_brookstone.png");
+            }
           }
           & .p_dots_box {
             height:  330px;
-            width:  460px;
+            width:  340px;
             position: absolute;
-            left:  15%;
+            left:  23%;
             margin-left:  -10px;
             top: 60%;
             margin-top: -140px;
@@ -69,32 +74,263 @@ body.wfl {
 
 
       /********************************/
-      /* SECTION ONE - Feature List
+      /* SECTION ONE - Home to Gate
       /********************************/
       & .wfl_p_section1 {
-        
-      }
+        & .grid_wfl_home_to_gate {
 
-
-
-
-
-      /********************************/
-      /* SECTION TWO — Dashboard
-      /********************************/
-      & .wfl_p_section2 {
-
-        & .storyline .image_wrapper{
-          position: relative;
-          width: var(--oj_beyond_width);
-          height:  822px;
-          margin:  auto;
+          & .img_container {
+            height: 570px;
+          }
+          & .gallery_1 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_iphone_home_2x.png");
+          }
+          & .gallery_2 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_iphone_airport_2x.png");
+          }
+          & .gallery_3 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_iphone_shuttle_2x.png");
+          }
+          & .gallery_4 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_iphone_security_2x.png");
+          }
         }
       }
 
 
 
 
+
+      /********************************/
+      /* SECTION TWO — Storyline / Journey
+      /********************************/
+      & .wfl_p_section2 {
+        
+
+        & .storyline .image_wrapper {
+          position: relative;
+          width: var(--oj_beyond_width);
+          height:  520px;
+          margin:  auto;
+          & > .img_thumb { 
+            background-image: url("/images/project/wfl/t1_tombradley.png");
+          }
+        }
+
+
+
+        & .overlay_container {
+          & .indicator {
+            width: 30px;
+            height: 30px;
+            /*width: 80px;*/
+            /*height: 80px;*/
+            /*border: 1px solid red;*/
+
+            & .base {
+       /*       width: 30px;
+              height: 30px;
+              margin: 0;
+              top: auto;
+              left: auto;*/
+            }
+            & .outer_ring {
+            }
+            & .dot {
+              /*margin-left: ;*/
+              /*bottom: 10px;*/
+              /*left: 15px;*/
+              top: 16px;
+              /*margin: 0;*/
+              /*margin: 10px 0 0 -3.5px;*/
+              /*line-height: 0;*/
+              background: none;
+              box-shadow: none;
+              & .line {
+                top: 7px;
+                left:  11px;
+              }
+              & .digit {
+                font-size: 10px;
+                font-weight: bold;
+                color: rgba(0,0,0,0.7);
+                text-indent: 1px;
+                /*position: absolute;*/
+                /*top: -16px;*/
+                /*left: -1px;*/
+                /*width: 10px;*/
+                /*text-align: center;*/
+              }
+            }
+          }
+          & .features_1 {
+            top:  35px;
+            left:  395px;
+             & .indicator {
+              & .line {
+                right:  auto;
+                
+              }
+             }
+             & .img_container {
+              height: 500px;
+              width:  300px;
+              top: -40px;
+              right:  -50px;
+              & .img_thumb {
+                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
+                background-color: blue;
+              }
+            }
+          } 
+          & .features_2 {
+            top:  35px;
+            left:  180px;
+             & .indicator {
+              & .line {
+                right:  auto;
+                
+              }
+             }
+             & .img_container {
+              height: 500px;
+              width:  300px;
+              top: -100px;
+              left:  60px;
+              & .img_thumb {
+                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
+                background-color: red;
+              }
+             }
+          }
+          & .features_3 {
+            top:  245px;
+            left:  245px;
+             & .indicator {
+              & .line {
+                
+              }
+             }
+            & .img_container {
+              height: 500px;
+              width:  300px;
+              top: -240px;
+              left:  60px;
+              & .img_thumb {
+                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
+                background-color: green;
+              }
+            }
+          }
+          & .features_4 {
+            top:  242px;
+            left:  405px;
+            & .indicator {
+              & .line {
+              }
+            }
+            & .img_container {
+              height: 500px;
+              width:  300px;
+              top: -190px;
+              left:  60px;
+              & .img_thumb {
+                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
+                background-color: pink;
+              }
+            }
+          }
+          & .features_5 {
+            top:  242px;
+            right:  155px;
+            & .indicator {
+              & .line {
+                right:  11px;
+                left: auto;
+              }
+            }
+            & .img_container {
+              height: 500px;
+              width:  300px;
+              top: -240px;
+              left:  -320px;
+              & .img_thumb {
+                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
+                background-color: yellow;
+              }
+            }
+          }
+
+          & .features_6 {
+            top:  342px;
+            right:  155px;
+            & .indicator {
+              & .line {
+                right:  11px;
+                left: auto;
+              }
+            }
+            & .img_container {
+              height: 500px;
+              width:  300px;
+              top: -280px;
+              left:  -320px;
+              & .img_thumb {
+                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
+                background-color: purple;
+              }
+            }
+          }
+
+
+
+
+        }
+      }
+
+
+
+
+      /********************************/
+      /* SECTION Three - 
+      /********************************/
+      & .wfl_p_section3 {
+        & .p_thumb_grid ul {
+          /*max-width: 1560px !important;*/
+        }
+        & .img_container {
+          height: 570px;
+          width: 320px;
+        }
+        & .grid_wfl_ecom_ui {
+          & .gallery_1 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_home_shopndine_2x.png");
+          }
+          & .gallery_2 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_pdp_2x.png");
+          }
+          & .gallery_3 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_cart_2x.png");
+          }
+          & .gallery_4 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_reciept_2x.png");
+          }
+        }
+        & .grid_wfl_ecom_ux {
+          & .gallery_1 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_home_shopndine_ux_2x.png");
+          }
+          & .gallery_2 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_pdp_ux_2x.png");
+          }
+          & .gallery_3 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_cart_ux_2x.png");
+          }
+          & .gallery_4 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_reciept_ux_2x.png");
+          }
+        }
+      }
 
 
 

@@ -322,41 +322,6 @@ body.mosaic {
             background-color: #F2F2F2;
             background-image: url("/images/project/mosaic/stock_detail.png");
           }
-
-          & .overlay_container {
-            & .features_2 {
-              top:  -20px;
-              right:  98px;
-               & .indicator {
-
-               }
-               & .img_container {
-                height: 500px;
-                width:  300px;
-                top: -40px;
-                left:  -320px;
-               }
-            }
-            & .features_1 {
-              top:  16px;
-              left:  195px;
-               & .indicator {
-                & .line {
-                  right:  auto;
-                  left:  2px;
-                }
-               }
-               & .img_container {
-                height: 500px;
-                width:  300px;
-                top: -40px;
-                right:  -50px;
-               }
-            }              
-          }
-
-
-
         }
 
       }
