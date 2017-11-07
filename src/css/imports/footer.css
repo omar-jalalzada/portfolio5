@@ -20,11 +20,19 @@ footer {
     & .footer_left{
       position: relative;
       /* background-color: red; */
-      background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
-      background-image: -moz-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
-      background-image: -ms-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
-      background-image: repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
-      background-size: 6px 6px;
+
+      & .dot_box_container {
+        width:  1900px;
+        height:  100%;
+        background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
+        background-image: -moz-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
+        background-image: -ms-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
+        background-image: repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(0,0,0,0) 1px, transparent 1px, transparent 100%);
+        background-size: 6px 6px;
+        position: absolute;
+        top:  0;
+        left:  0;
+      }
       & .footer_highlight_line {
 
         width:  54px;
