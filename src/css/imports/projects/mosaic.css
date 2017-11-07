@@ -93,6 +93,7 @@ body.mosaic {
             width: var(--oj_beyond_width);
             height:  822px;
             margin:  auto;
+            border-radius:  2px;
             & > .img_thumb { 
               background-color: #334A6F;
               background-image: url("/images/project/mosaic/dashboard.png");

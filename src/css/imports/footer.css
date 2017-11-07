@@ -19,8 +19,6 @@ footer {
     height:  100%;
     & .footer_left{
       position: relative;
-      /* background-color: red; */
-
       & .dot_box_container {
         width:  1900px;
         height:  100%;
