@@ -11,15 +11,18 @@ document.addEventListener("DOMContentLoaded", function(){
   ///////////////////////////
   // Project Page Header
   // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {appearOnScroll()};
-
-  function appearOnScroll() {
-      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-          document.getElementById("project_header").className = " show";
-      } else {
-          document.getElementById("project_header").className = " hide";
-      }
+  var project_header_scroll = document.getElementById("project_header");
+  if (project_header_scroll != null && project_header_scroll !== undefined) {
+    window.onscroll = function() {appearOnScroll()};
+    function appearOnScroll() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("project_header").className = " show";
+        } else {
+            document.getElementById("project_header").className = " hide";
+        }
+    }
   }
+  
   // When the user clicks on the button, scroll to the top of the document
   var top_btn = document.getElementById("go_top_btn");
   if (top_btn != null && top_btn !== undefined) {

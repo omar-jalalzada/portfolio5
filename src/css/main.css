@@ -24,16 +24,21 @@
     & .index_inner_container {
       height: 1100px;
       & .index_text_container {
-        top:  35%;
+        top:  46.5%;
       }
     }
-    & .spark_container {
-      left:  360px;
-      top:  450px;
+
+    & .index_inner_container .index_graphic_container .index_graphic_inner_container .spark_container {
+      left:  410px;
+      top:  500px;
+      & .arrow_down {
+        top:  510px;
+        left:  -55px;
+      }
       &::before {
-        height: 1900px !important;
-        left:  0px !important;
-        top:  -550px !important;
+        height: 1760px;
+        left:  0px;
+        top:  -550px;
       }
     }
   }
@@ -67,12 +72,15 @@
       height: 500px;
       width: 100%;
       & .index_text_container {
-        width: 92%;
+        width: 80%;
         font-size: 14px;
         height:  90px;
         top:  50%;
         margin:  -45px 0 0 0;
         margin: -45px 4% 0 4%;
+        & .second_p {
+          margin-top: 10px;
+        }
       }
       & .index_graphic_container {
         display: none;

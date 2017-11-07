@@ -2,34 +2,45 @@
 .index_container {
   /* border: 1px solid gold; */
   margin: 0 auto;
-  position: relative;
+  
   padding:  10px;
   max-width: 1264px;
+
   & .index_inner_container {
-    /* border: 1px solid green; */
     height: 700px;
     position: relative;
     & .index_text_container {
-      /* border:  1px solid blue; */
       position: absolute;
-      max-width: 480px;
-      top:  53%;
+      top:  55.9%;
       & p {
-        color: rgba(255,255,255,1);
-        text-shadow: 0 1px 0 color(var(--ojtl1));
         font-size: 18px;
         line-height: 1.7;
+        color: var(--ojtl7);
+        max-width: 610px;
+        &.first_p {
+          max-width: 430px;
+          &::before {
+            content:  " ";
+            display: block;
+            width:  40px;
+            height:  3px;
+            border-radius: 2px;
+            background-color: var(--ojyw);
+            box-shadow: 0 0 0 1px color(var(--ojtl) shade(2%) a(50%));
+            position: absolute;
+            top:  -17px;
+            left:  0;
+          }
+        }
       }
     }
 
     & .index_graphic_container {
-      /* border:  1px solid blue; */
       position: relative;
       height: 100%;
       width: 50%;
       float:  right;
       & .index_graphic_inner_container {
-        /* border:  1px solid red; */
         height: 100%;
         & .spark_container {
           display: block;
@@ -61,7 +72,6 @@
             position: absolute;
             bottom:  -60px;
             left:  -70px;
-            /* background-color: blue; */
             transform: rotate(-90deg) translateY(90px);
 
           }
@@ -69,7 +79,6 @@
             position: absolute;
             top:  -150px;
             right:  -70px;
-            /* background-color: green; */
             transform: rotate(30deg) translateY(90px);
           }
           & .r_2 {
@@ -83,8 +92,27 @@
             position: absolute;
             bottom:  -90px;
             right:  -80px;
-            /* background-color: purple; */
             transform: rotate(-10deg) translateX(-90px) translateY(-90px);
+          }
+          & .arrow_down {
+            position: absolute;
+            top:  300px;
+            left:  -18px;
+            transform: rotate(98deg);
+            width:  50px;
+            height:  50px;
+            text-align: center;
+            background-color: var(--ojtl);
+            border-radius: 3px;
+            & .arrow {
+              animation: oj_bounce 2s cubic-bezier(0,.93,.8,.92) 2s;
+              animation-iteration-count: infinite; 
+              font-size: 12px;
+              line-height: 4;
+              color:  color(var(--ojabstractLines) tint(60%));
+              text-shadow: 0 0 1px color(var(--ojtl) shade(10%));
+            }
+
           }
           &::before {
             content:  " ";
@@ -94,10 +122,10 @@
             display: block;
             background-color: var(--ojabstractLines);
             border-radius: 1px;
-            height: 1420px ;
+            height: 1380px ;
             left:  20px;
             top:  -450px;
-            box-shadow: 0 0 0 1px color(var(--ojtl) shade(4%) a(50%));
+            box-shadow: 0 0 0 1px color(var(--ojtl) shade(2%) a(50%));
           }
           &::after {
             height: 114px;
@@ -111,8 +139,8 @@
             background-color: color(var(--ojtl) tint(5%));
             transform:  scale(0);
             transition: all 0.6s cubic-bezier(0,.93,.8,.92) .5s;
-            
           }
+
           &.loaded {
             &> span {
               opacity: 1;
@@ -136,12 +164,50 @@
               transform:  scale(1);
               background-color: var(--ojtl);
             }
-
           }
         }
 
       }
     }
+  }
+}
 
+/* .confetti {
+  width:  80px;
+  height: 6px;
+  position: absolute;
+  border-radius: 2px;
+  background-color: var(--ojrd);
+  transform: rotate(45deg);
+  &.confetti1 {
+    top:  1100px;
+    left:  -20px;
+    background-color: var(--ojabstractLines);
+  }
+  &.confetti2 {
+    top:  2700px;
+    right:  -20px;
+    background-color: var(--ojrd);
+    transform: rotate(-45deg);
+  }
+  &.confetti3 {
+    top:  1800px;
+    left:  40%;
+    width:  60px;
+  }
+}
+
+ */
+
+
+@-webkit-keyframes oj_bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-8px);
+  }
+  60% {
+    transform: translateX(-4px);
   }
 }

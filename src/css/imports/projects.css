@@ -262,7 +262,7 @@ body.projects {
     /* CONTAINER HOVER */
     &.hovered {
       & .overlay_container {
-        background-color: rgba(0,0,0,.1);
+        background-color: rgba(0,0,0,.3);
       }
       /* *************** */
       /* POP UP HOVER */

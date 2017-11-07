@@ -5,8 +5,8 @@
     <div class="index_inner_container">
 
       <div class="index_text_container  sr_direction_up">
-        <p>Hi, my name is Omar Jalalzada and I'm a product designer based in San Francisco, CA. 
-        </br> I like my eggs sunny side up and this is my portfolio.</p>
+        <p class="first_p">Hi, my name is <b>Omar Jalalzada </b>and I'm a <b>product designer</b> based in San Francisco, CA.</p>
+        <p class="second_p"> I understand that guac is extra and this is my portfolio.</p>
       </div>
 
       <div class="index_graphic_container">
@@ -18,15 +18,24 @@
               <span class='r_1'></span>
               <span class='r_2'></span>
               <span class='r_3'></span>
+              <div class='arrow_down'>
+                <div class="arrow">&#x2794;</div>
+              </div>
             </span>
           </div>
       </div>
     </div>
-
+<!--     <span class='confetti confetti1'></span>
+    <span class='confetti confetti2'></span>
+    <span class='confetti confetti3'></span> -->
   <div class="project_lister_container">
+
     {{ partial "project_lister" . }}
   </div>
 
 </div> <!-- end .index_container -->
+
+
+
 
 {{ end }}
