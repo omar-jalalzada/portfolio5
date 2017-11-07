@@ -111,8 +111,8 @@ body.mosaic {
                 & .img_container {
                   height: 414px;
                   width:  371px;
-                  top: -80px;
-                  right:  -50px;
+                  top: -40px;
+                  left:  50px;
                   & .img_thumb {
                     background-image: url("/images/project/mosaic/dashboard_overlay_manage.png");
                     /* box-shadow: none; */
@@ -125,22 +125,23 @@ body.mosaic {
                 top:  -20px;
                 right:  117px;
                 & .img_inner_container_1 {
-                  width:  276px;
+                  width:  275px;
                   height: 376px;
 
                   position: absolute;
-                  top: -90px;
+                  top: -40px;
                   right:  120px;
                   & .img_thumb {
                     background-image: url("/images/project/mosaic/dashboard_overlay_create.png");
+                    background-color: #eee;
                   }
                 }
                 & .img_inner_container_2 {
-                  width:  724px;
-                  height: 526px;
+                  width:  614px;
+                  height: 446px;
                   position: absolute;
-                  top: -90px;
-                  right:  420px;
+                  top: -40px;
+                  right:  410px;
                   & .img_thumb {
                     background-image: url("/images/project/mosaic/dashboard_overlay_create_2.png");
                     background-color: #eee;
