@@ -246,14 +246,14 @@ body.projects {
             transition: all .5s cubic-bezier(.18,.33,.59,1);
           }
         }
-        & .img_container {
+        & .img_container, & .img_container_1, & .img_container_2 {
           z-index: 20;
           opacity: 0;
           display: none;
           /* visibility: hidden; */
           width:  100px;
           height:  100px;
-          position: relative;
+          position: absolute;
           /* transition: opacity .5s cubic-bezier(.18,.33,.59,1); */
         }
       }
@@ -288,7 +288,7 @@ body.projects {
             background-color: white;
           }
         }
-        & .img_container {
+        & .img_container, & .img_container_1, & .img_container_2 {
           display: block;
           opacity: 1;
         }

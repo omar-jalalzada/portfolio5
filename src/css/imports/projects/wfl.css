@@ -15,7 +15,7 @@ body.wfl {
             height:  378px;
             width:  315px;
             position: absolute;
-            top:  -100px;
+            top:  -40px;
             left:  16%;
             & .img_thumb {
               background-color: #eee; 
@@ -26,7 +26,7 @@ body.wfl {
             height: 256px;
             width: 325px;
             position: absolute;
-            bottom:  -130px;
+            bottom:  -190px;
             left:  31%;
             & .img_thumb { 
               background-color: #ddd;
@@ -37,7 +37,7 @@ body.wfl {
             height: 200px;
             width: 157px;
             position: absolute;
-            bottom:  -74px;
+            bottom:  -134px;
             left:  3%;
             & .img_thumb {
               background-color: #eee; 
@@ -48,7 +48,7 @@ body.wfl {
             height: 200px;
             width: 157px;
             position: absolute;
-            top:  78px;
+            top:  138px;
             left:  69%;
             & .img_thumb {
               background-color: #eee; 
@@ -84,15 +84,20 @@ body.wfl {
           }
           & .gallery_1 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_iphone_home_2x.png");
+            background-color: #098F43;
+
           }
           & .gallery_2 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_iphone_airport_2x.png");
+            background-color: #21456D;
           }
           & .gallery_3 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_iphone_shuttle_2x.png");
+            background-color: #21456D;
           }
           & .gallery_4 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_iphone_security_2x.png");
+            background-color: #21456D;
           }
         }
       }
@@ -100,11 +105,37 @@ body.wfl {
 
 
 
-
       /********************************/
-      /* SECTION TWO — Storyline / Journey
+      /* SECTION TWO - 
       /********************************/
       & .wfl_p_section2 {
+
+
+        & .grid_wfl_research {
+          & .img_container {
+            height: 420px;
+          }
+          & .gallery_1 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_process_persona1.png");
+          }
+          & .gallery_2 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_process_persona2.png");
+          }
+          & .gallery_3 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_process_user_jouney.png");
+          }
+          & .gallery_4 .inner_img_container1 .img_thumb{
+            background-image: url("/images/project/wfl/wfl_process_workflow.png");
+          }
+        }
+
+
+      }
+
+      /********************************/
+      /* SECTION Three — Storyline / Journey
+      /********************************/
+      & .wfl_p_section3 {
         
 
         & .storyline .image_wrapper {
@@ -123,27 +154,12 @@ body.wfl {
           & .indicator {
             width: 30px;
             height: 30px;
-            /*width: 80px;*/
-            /*height: 80px;*/
-            /*border: 1px solid red;*/
-
             & .base {
-       /*       width: 30px;
-              height: 30px;
-              margin: 0;
-              top: auto;
-              left: auto;*/
             }
             & .outer_ring {
             }
             & .dot {
-              /*margin-left: ;*/
-              /*bottom: 10px;*/
-              /*left: 15px;*/
               top: 16px;
-              /*margin: 0;*/
-              /*margin: 10px 0 0 -3.5px;*/
-              /*line-height: 0;*/
               background: none;
               box-shadow: none;
               & .line {
@@ -154,89 +170,121 @@ body.wfl {
                 font-size: 10px;
                 font-weight: bold;
                 color: rgba(0,0,0,0.7);
-                text-indent: 1px;
-                /*position: absolute;*/
-                /*top: -16px;*/
-                /*left: -1px;*/
-                /*width: 10px;*/
-                /*text-align: center;*/
               }
             }
           }
+
+          & .img_shadow {
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 
+                        0 16px 40px 0 rgba(11, 27, 49, .3), 
+                        0 20px 80px 0 rgba(11, 27, 49, .5);
+          }
+
+
+          /* GENERAL STYLES FOR THIS SECTION */
+          & .img_container_1 {
+            height: 420px;
+            width:  460px;
+            & .text_container {
+              position: absolute;
+              bottom:  20px;
+              left:  20px;
+              width:  320px;
+              color:  var(--ojtl8);
+              &::before {
+                content:  " ";
+                display: block;
+                width:  30px;
+                height:  3px;
+                background-color: var(--ojyw);
+                position: absolute;
+                top:  -10px;
+                left:  0;
+              }
+            }
+          }
+          & .img_container_2{
+            height: 570px;
+            width: 320px;
+          }
+
+          /* INDIVIDUAL STYLES */
           & .features_1 {
             top:  35px;
             left:  395px;
-             & .indicator {
-              & .line {
-                right:  auto;
-                
-              }
-             }
-             & .img_container {
-              height: 500px;
-              width:  300px;
-              top: -40px;
-              right:  -50px;
+            & .indicator .digit {
+              text-indent: 2px;
+            }
+            & .img_container_1{
+              top: -100px;
+              left:  60px;
               & .img_thumb {
-                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
-                background-color: blue;
+                background-image: url("/images/project/wfl/story_1.jpg");
+              }
+            }
+             & .img_container_2{
+              top: -170px;
+              left:  460px;
+              & .img_thumb {
+                background-image: url("/images/project/wfl/story_1_flight_setting.png");
+                background-color: #0857A2;
               }
             }
           } 
           & .features_2 {
             top:  35px;
             left:  180px;
-             & .indicator {
-              & .line {
-                right:  auto;
-                
-              }
-             }
-             & .img_container {
-              height: 500px;
-              width:  300px;
+             & .img_container_1{
               top: -100px;
               left:  60px;
               & .img_thumb {
-                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
-                background-color: red;
+                background-image: url("/images/project/wfl/story_2.jpg");
               }
-             }
+            }
+             & .img_container_2{
+              top: -170px;
+              left:  460px;
+              & .img_thumb {
+                background-image: url("/images/project/wfl/story_2_parking.png");
+                background-color: #098F43;
+              }
+            }
           }
           & .features_3 {
             top:  245px;
             left:  245px;
-             & .indicator {
-              & .line {
-                
-              }
-             }
-            & .img_container {
-              height: 500px;
-              width:  300px;
-              top: -240px;
+             & .img_container_1{
+              top: -100px;
               left:  60px;
               & .img_thumb {
-                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
-                background-color: green;
+                background-image: url("/images/project/wfl/story_3.jpg");
+              }
+            }
+             & .img_container_2{
+              top: -170px;
+              left:  460px;
+              & .img_thumb {
+                background-image: url("/images/project/wfl/story_3_boardingpass.png");
+                background-color: #098F43;
               }
             }
           }
           & .features_4 {
             top:  242px;
             left:  405px;
-            & .indicator {
-              & .line {
-              }
-            }
-            & .img_container {
-              height: 500px;
-              width:  300px;
-              top: -190px;
+             & .img_container_1{
+              top: -100px;
               left:  60px;
               & .img_thumb {
-                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
-                background-color: pink;
+                background-image: url("/images/project/wfl/story_4.jpg");
+              }
+            }
+             & .img_container_2{
+              top: -170px;
+              left:  460px;
+              & .img_thumb {
+                background-image: url("/images/project/wfl/story_4_wayfinding.png");
+                background-color: #098F43;
               }
             }
           }
@@ -249,14 +297,19 @@ body.wfl {
                 left: auto;
               }
             }
-            & .img_container {
-              height: 500px;
-              width:  300px;
-              top: -240px;
-              left:  -320px;
+             & .img_container_1{
+              top: -100px;
+              right:  360px;
               & .img_thumb {
-                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
-                background-color: yellow;
+                background-image: url("/images/project/wfl/story_5.jpg");
+              }
+            }
+             & .img_container_2{
+              top: -170px;
+              right:  60px;
+              & .img_thumb {
+                background-image: url("/images/project/wfl/story_5_delivery.png");
+                background-color: #687079;
               }
             }
           }
@@ -270,14 +323,43 @@ body.wfl {
                 left: auto;
               }
             }
-            & .img_container {
-              height: 500px;
-              width:  300px;
-              top: -280px;
-              left:  -320px;
+             & .img_container_1{
+              top: -100px;
+              right:  360px;
               & .img_thumb {
-                /*background-image: url("/images/project/mosaic/smartlist_details.png");*/
-                background-color: purple;
+                background-image: url("/images/project/wfl/story_6.jpg");
+              }
+            }
+             & .img_container_2{
+              top: -170px;
+              right:  60px;
+              & .img_thumb {
+                background-image: url("/images/project/wfl/story_6_inflight_purchase.png");
+                background-color: #098F43;
+              }
+            }
+          }
+          & .features_7 {
+            top:  382px;
+            right:  155px;
+            & .indicator {
+              & .line {
+                right:  11px;
+                left: auto;
+              }
+            }
+             & .img_container_1{
+              top: -100px;
+              right:  360px;
+              & .img_thumb {
+                background-image: url("/images/project/wfl/story_7.jpg");
+              }
+            }
+             & .img_container_2{
+              top: -170px;
+              right:  60px;
+              & .img_thumb {
+                background-image: url("/images/project/wfl/story_7_pickup_reciept.png");
               }
             }
           }
@@ -292,9 +374,9 @@ body.wfl {
 
 
       /********************************/
-      /* SECTION Three - 
+      /* SECTION Four - 
       /********************************/
-      & .wfl_p_section3 {
+      & .wfl_p_section4 {
         & .p_thumb_grid ul {
           /*max-width: 1560px !important;*/
         }
@@ -305,15 +387,19 @@ body.wfl {
         & .grid_wfl_ecom_ui {
           & .gallery_1 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_home_shopndine_2x.png");
+            background-color: #0857A2;
           }
           & .gallery_2 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_pdp_2x.png");
+            background-color: #0857A2;
           }
           & .gallery_3 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_cart_2x.png");
+            background-color: #0857A2;
           }
           & .gallery_4 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_reciept_2x.png");
+            background-color: #098F43;
           }
         }
         & .grid_wfl_ecom_ux {
@@ -322,15 +408,21 @@ body.wfl {
           }
           & .gallery_2 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_pdp_ux_2x.png");
+        
           }
           & .gallery_3 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_cart_ux_2x.png");
           }
           & .gallery_4 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_reciept_ux_2x.png");
+            background-color: #eee;
           }
         }
       }
+
+
+
+
 
 
 
