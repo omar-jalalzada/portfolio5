@@ -111,7 +111,6 @@ body.mosaic {
                 & .img_container {
                   height: 414px;
                   width:  371px;
-
                   top: -80px;
                   right:  -50px;
                   & .img_thumb {
@@ -288,7 +287,7 @@ body.mosaic {
               width:  700px;
 
               top: -140px;
-              right:  -30px;
+              left:  20px;
               & .img_thumb {
                 background-image: url("/images/project/mosaic/smartlist_manage.png");
                 box-shadow: none;
