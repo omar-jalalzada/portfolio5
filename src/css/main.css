@@ -108,7 +108,7 @@
         & .index_project_desc {
           width: 92%;
           margin: 60px 4% 0 4%;
-          height:  280px;
+          height:  320px;
           & .index_project_title {
             margin-bottom: 14px;
           }
@@ -137,6 +137,9 @@
               transform: none;
               display: block;
             }
+            &:hover {
+              width: var(--oj_w);
+            }
           }
         }
         & .index_project_thumb {
@@ -163,9 +166,6 @@
                 margin-left:  0;
                 margin-right:  0;
                 bottom:  -25px;
-              }
-              &.main_thumb::before {
-                /* display: none; */
               }
             }
             &.p_t_mosaic {

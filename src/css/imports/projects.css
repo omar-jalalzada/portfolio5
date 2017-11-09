@@ -87,13 +87,13 @@ body.projects {
         margin:  0 auto;
         text-align: center;
         margin-top: -15px;
+        color:  var(--ojtl4);
       }
       & .divider_line {
-
         height:  1px;
         width:  100%;
         display: block;
-        background-color: var(--ojtl2);
+        background-color: var(--ojtl1);
       }
     }
 
