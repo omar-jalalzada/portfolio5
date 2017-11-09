@@ -143,10 +143,6 @@
           padding: 0;
           & .project_thumb {
             & .img_container {
-              & .img_shadow {
-                top:  0;
-                left:  0;
-              }
               & .img_thumb {
                 top:  0;
                 left:  0;
@@ -169,7 +165,7 @@
                 /* display: none; */
               }
             }
-            &.p_t_Mosaic {
+            &.p_t_mosaic {
               height:  220px;
               & .main_thumb {
                 width:  310px;
@@ -181,7 +177,7 @@
                 top: 0;
               }
             }
-            &.p_t_Macys {
+            &.p_t_mcom {
               height:  470px;
               & .main_thumb {
                 right: auto;
@@ -191,7 +187,7 @@
                 top: 0;
               }
             }
-            &.p_t_WFL {
+            &.p_t_wfl {
               height:  500px;
               & .main_thumb {
                 right: auto;
@@ -201,7 +197,7 @@
                 top: 0;
               }
             }
-            &.p_t_Arc {
+            &.p_t_arc {
               height:  380px;
               & .main_thumb {
                 right: auto;
@@ -229,12 +225,12 @@
     }
 
     & .project_section_container {
-      margin-top: 180px;
+      margin-top: 140px;
 
       /* Grid layouts */
       & .p_thumb_grid {
         width:  100%;
-        height:  650px;
+        height: 690px;
         overflow-x: scroll;
         /* border:  1px solid red; */
         -webkit-overflow-scrolling: touch;
@@ -254,6 +250,7 @@
         overflow-x: scroll;
         overflow-y: hidden;
         webkit-overflow-scrolling: touch;
+        position: relative;
       }
 
 
@@ -381,10 +378,10 @@
         }
 
         & .mcom_p_section3 .grid_mcom_lists{
-          height: 730px;
+          height: 760px;
         }
         & .mcom_p_section4 .grid_mcom_pdp{
-          height:  975px;
+          height:  1000px;
           & ul {
             width:  1050px;
           }
@@ -455,21 +452,38 @@
 
         & .mosaic_p_section3 .flat_grid_container .flat_grid{
           margin:  0;
-        } 
+          height: 630px;
+          width: 2000px;
+          & .img_container5 {
+            display: none;
+          }
+          & .img_container3 {
+            top:  calc(var(--img_size_1_height)+22px);
+            left:  calc(var(--img_size_1_width)+20px);
+          }
+          & .img_container6 {
+            left:  calc((var(--img_size_1_width)*2)+40px);
+            top:  0;
+          }
+        }
+
         & .mosaic_p_section4 .smartlists_preview .image_wrapper{
           width:  820px;
           height:  478px;
         }
+
         & .mosaic_p_section5 .stock_modal_preview .image_wrapper {
           width:  820px;
           height:  420px;
         }
+
         & .mosaic_p_section7 .p_thumb_grid {
           height:  860px;
           & ul {
             width:  1220px;
           }
         }
+
         & .mosaic_p_section8 .p_thumb_grid {
           height:  500px;
         }
@@ -535,24 +549,19 @@
         }
 
         & .wfl_p_section2 .p_thumb_grid{
-          height:  550px;
+          height:  560px;
         }
 
         & .wfl_p_section3 {
           & .storyline .image_wrapper{
             height:  640px;
-            /* border:  1px solid green; */
-            /* width:  700px; */
-            /* background-color: blue; */
             &.hovered .overlay_container{
-              /* background-color: red; */
             }
             &> .img_thumb, &> .img_shadow {
              display: none;
             }
             & .overlay_container {
               width:  4900px;
-              /* background-color: red; */
               overflow: hidden;
 
               & .feature_pop_up {
@@ -560,9 +569,15 @@
                 width:  700px;
                 height:  670px;
                 position: relative;
-                /* border:  1px solid gold; */
                 left:  0;
                 top:  0;
+
+                & .img_shadow {
+                  box-shadow: 0 15px 40px 0 rgba(73,208,163,.1),
+                              0 2px 4px 0 rgba(0,0,0,0.2),
+                              0 16px 40px 0 rgba(71,74,73,0.3),
+                              0 20px 80px 0 rgba(71,74,73,.5);
+                }
 
                 & .timeline {
                   width:  100%;
@@ -584,7 +599,6 @@
                     position: absolute;
                     left:  155px;
                     top:  -12px;
-                    /* border:  2px solid var(--ojabstractLines); */
                     border-radius: 50%;
                     background-color: var(--ojabstractLines);
                     text-align: center;

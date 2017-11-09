@@ -28,7 +28,7 @@ body.arc {
             width:  320px;
             position: absolute;
             top:  -80px;
-            left:  10px;
+            left:  20px;
             z-index: 10;
             & .img_thumb {
               background-image: url("/images/project/arc/arc_top_story.png");
@@ -41,7 +41,7 @@ body.arc {
             position: absolute;
             left:  15%;
             margin-left:  -10px;
-            top: 30%;
+            top: 0%;
             z-index: -10;
           }
         }

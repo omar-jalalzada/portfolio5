@@ -56,11 +56,10 @@ body.mosaic {
           }
           & .p_dots_box {
             height:  630px;
-            width:  460px;
+            width:  490px;
             position: absolute;
             left:  15%;
-            margin-left:  -10px;
-            top: 60%;
+            top: 65%;
             margin-top: -140px;
             z-index: -10;
           }
