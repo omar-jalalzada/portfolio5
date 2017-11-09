@@ -9,7 +9,7 @@
     <div class="p_header_dots_number">{{ .Get "numb" }}.</div>
     <h2>{{ .Get "title" }}</h2>
     <div class="p_header_content"> 
-      <p>{{ .Get "desc" }}</p>
+      <p>{{ .Get "desc" | safeHTML }}</p>
     </div>
   </div>
 

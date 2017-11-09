@@ -31,7 +31,7 @@
         & .index_project_secondary {
           font-size: 14px;
           line-height: 1.2;
-          color:  var(--ojtl4);
+          color:  var(--ojtl6);
           margin-bottom: 10px;
         }
 
@@ -51,7 +51,7 @@
             position: absolute;
             background-color: var(--ojrd);
             &.text {
-              transform: translate3d(0,12px,0);
+              transform: translate3d(0,10px,0);
               text-align: center;
               height: 20px;
               width: 100%;
@@ -102,12 +102,12 @@
         }
         & .index_project_link:hover {
           width: calc(var(--oj_w) + 20px);
-          background-color:  var(--ojtl1);
+          background-color:  var(--ojtl);
           transition: width .2s ease-out, background .5s ease-in;
           & span {
             &.text {
-              transform: translate3d(0,10px,0);
-              transition: transform .3s ease-out;
+              /* transform: translate3d(0,10px,0); */
+              /* transition: transform .3s ease-out; */
               color:  var(--ojrd);
             }
             &.b_b {
@@ -287,7 +287,7 @@
               top: -40px;
               left: 23%;
               & .img_thumb {
-                background-image: url("/images/index/index_arc_story_320x380@2x.png");
+                background-image: url("/images/index/index_arc_1_320x380@2x.png");
               }
               &::before {
                 content:  " ";
@@ -301,7 +301,7 @@
                 height: 500px;
                 left:  50%;
                 top:  -55px;
-                 z-index: -1;
+                z-index: -1;
               }
             }
             & .dotted_box {

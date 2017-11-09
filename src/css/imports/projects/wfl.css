@@ -405,6 +405,7 @@ body.wfl {
           }
         }
         & .grid_wfl_ecom_ux {
+          /* margin-top:  80px; */
           & .gallery_1 .inner_img_container1 .img_thumb{
             background-image: url("/images/project/wfl/wfl_home_shopndine_ux_2x.png");
           }

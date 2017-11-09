@@ -10,40 +10,51 @@
     max-width: 1264px;
     margin:  auto;
     padding-left:  10px;
-    & a {
+    position: relative;
+    & .project_home_link {
       font-size:  14px;
       font-weight: 300;
-      transition: opacity .6s cubic-bezier(0,.93,.8,.92);
-    }
-
-    & #go_top_btn {
+      transition: all 1s cubic-bezier(0,.93,.8,.92);
       position: absolute;
-      top:  24px;
-      width:  100px;
-      left:  50%;
-      margin-left:  -50px;
-      font-size: 14px;
-      font-weight: bold;
-      color:  var(--ojtl4);
-      text-align: center;
-      user-select: none; 
-      cursor: pointer;
-      opacity: 0;
-      transition: all .6s cubic-bezier(0,.93,.8,.92);
-      &:hover {
-        color:  var(--ojtl8);
-      }
+      left: 0px;
+      top:  0px;
+    }
+  }
+
+  & #go_top_btn {
+    position: absolute;
+    top:  -20px;
+    width:  50px;
+    height:  50px;
+    line-height: 3.4;
+    left:  50%;
+    margin-left:  -50px;
+    font-size: 14px;
+    font-weight: bold;
+    color:  var(--ojtl4);
+    text-align: center;
+    user-select: none; 
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0,.93,.8,.92);
+    border-radius: 50%;
+    &:hover {
+      color:  var(--ojtl8);
+      background-color: rgba(0,0,0,0.1);
     }
   }
 
   &.show {
     & .project_home_link {
-      opacity: 0;
+      opacity: .5;
       font-size:  14px;
       font-weight: 300;
+      top:  -40px;
+
     }
     & #go_top_btn {
       opacity: 1;
+      top:  24px;
     }
   } 
 

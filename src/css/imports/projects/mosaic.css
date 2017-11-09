@@ -29,7 +29,7 @@ body.mosaic {
               position: absolute;
               display: block;
               background-color: var(--ojabstractLines);
-              box-shadow: 0 0 0 1px color(var(--ojtl) shade(4%) a(50%));
+              box-shadow: 0 0 0 1px color(var(--ojtl) shade(2%) a(50%));
               border-radius: 1px;
               height: 960px;
               left:  60%;

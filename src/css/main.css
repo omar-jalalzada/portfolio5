@@ -56,8 +56,7 @@
   /* body * { box-shadow: inset 0 0 1px 1px red; } */
   body {
     & p {
-      /* font-weight: 400; */
-
+      /* TODO, ADD MORE LEGIBILITY FOR THE MOBILE TEXT BLOCKS */
     }
   }
 
@@ -272,6 +271,26 @@
     }
   }
 
+  /********************************/
+  /* Project Header
+  /********************************/
+  #project_header{
+    /* margin-left:  10px; */
+    & .project_inner_header {
+      margin-left:  10px;
+    }
+    & #go_top_btn {
+      left: auto;
+      right: 10px;
+      top:  -20px
+    }
+    &.show {
+     & #go_top_btn {
+       left: auto;
+       right: 10px;
+     }
+    }
+  }
 
   /********************************/
   /* Project specific pages
@@ -605,12 +624,69 @@
     }
   }
 
-  /********************************/
-  /* Project Header
-  /********************************/
-  #project_header .project_inner_header {
-    margin-left:  10px;
+
+
+  body.arc {
+    & .primary_content_container {
+      & .projects_inner_container {
+
+        & .p_section_top {
+          & .left_panel {
+            height:  600px;
+            width:  100%;
+          }
+          & .right_panel {
+            height:  500px;
+            width:  100%;
+            & .p_img_2 { 
+              top:  0;
+              left:  50%;
+              margin-left: -160px;
+              &::before {
+                content:  " ";
+                width:  2px;
+                transform: rotate(8deg);
+                position: absolute;
+                display: block;
+                background-color: var(--ojabstractLines);
+                box-shadow: 0 0 0 1px color(var(--ojtl) shade(2%) a(50%));
+                border-radius: 1px;
+                height: 600px;
+                left:  50%;
+                top:  -45px;
+                z-index: -1;
+              }
+            }
+            & .p_img_1 {
+              display: none;
+            }
+            & .p_dots_box {
+              top:  -30px;
+              width:  280px;
+              height: 570px;
+              left:  50%;
+              margin-left: -140px;
+            }
+          }
+        }
+
+        & .arc_p_section1 {
+          & .grid_arc_preso {
+            height:  540px;
+          }
+        }
+
+        & .arc_p_section3 {
+          & .p_thumb_grid {
+            height:  740px;
+          }
+        }
+
+      }
+    }
   }
+
+
 
   /********************************/
   /* Mobile Footer

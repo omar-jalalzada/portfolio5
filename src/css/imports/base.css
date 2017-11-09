@@ -95,7 +95,7 @@ body{
   }
   & p, & .p_styling {
     font-size: var(--oj_base_font_size);
-    color: var(--ojtl6);
+    color: var(--ojtl7);
     line-height: 26px;
     font-weight: 300;
     max-width: 460px;
