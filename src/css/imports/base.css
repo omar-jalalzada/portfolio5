@@ -99,7 +99,6 @@ body{
     line-height: 26px;
     font-weight: 300;
     max-width: 460px;
-    /* border:  2px solid red; */
   }
 
   & .oj_dots {
@@ -123,7 +122,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    /* opacity: .5; */
   }
 
   & .img_shadow {

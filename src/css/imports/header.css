@@ -16,7 +16,7 @@
       font-weight: 300;
       transition: all 1s cubic-bezier(0,.93,.8,.92);
       position: absolute;
-      left: 0px;
+      left: 10px;
       top:  0px;
     }
   }

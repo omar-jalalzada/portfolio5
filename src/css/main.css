@@ -54,17 +54,20 @@
 /* iPhone */
 @media (width <= 700px) {
   /* body * { box-shadow: inset 0 0 1px 1px red; } */
-  body {
-    & p {
-      /* TODO, ADD MORE LEGIBILITY FOR THE MOBILE TEXT BLOCKS */
-    }
-  }
+
 
 
   .mobile_only {
     display: block;
   }
 
+  & .p_styling, & p {
+    /* TODO, ADD MORE LEGIBILITY FOR THE MOBILE TEXT BLOCKS */
+    font-size: 18px;
+    font-weight: 400;
+    background-color: green !important;
+
+  }
   .index_container {
    
     & .index_inner_container {
@@ -107,12 +110,12 @@
           margin: 60px 4% 0 4%;
           height:  280px;
           & .index_project_title {
-            margin-bottom: 10px;
+            margin-bottom: 14px;
           }
 
           & .index_project_info {
-            font-size: 14px;
-            margin-bottom: 10px;
+            margin-bottom: 14px;
+
           }
           & .index_project_secondary {
             margin:  0px 0 20px 0;
@@ -273,9 +276,6 @@
   /********************************/
   #project_header{
     /* margin-left:  10px; */
-    & .project_inner_header {
-      margin-left:  10px;
-    }
     & #go_top_btn {
       left: auto;
       right: 10px;
