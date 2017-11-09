@@ -158,7 +158,7 @@
           & .dotted_box {
             z-index: -10;
           }
-          &.p_t_Mosaic {
+          &.p_t_mosaic {
             & .img1_container {
               width: 401px;
               height: 316px;
@@ -188,7 +188,7 @@
               left: 8%;
             }
           }
-          &.p_t_Macys {
+          &.p_t_mcom {
             & .img1_container {
               left: 0;
               top: -30px;
@@ -228,7 +228,7 @@
               right: 4%;
             }
           }
-          &.p_t_WFL {
+          &.p_t_wfl {
             & .img1_container {
               right: 0;
               top: 0px;
@@ -270,7 +270,7 @@
               left: 4%;
             }
           }
-          &.p_t_Arc {
+          &.p_t_arc {
             & .img1_container {
               left: 4%;
               top: -6px;

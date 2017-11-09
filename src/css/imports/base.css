@@ -90,7 +90,7 @@ body{
     font-size: 18px;
     line-height: 18px;
     color:  color(var(--ojtl8));
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom:  14px;
   }
   & p, & .p_styling {

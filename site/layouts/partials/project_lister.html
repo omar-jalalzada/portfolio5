@@ -7,7 +7,7 @@
       <div class="index_project_list_inner_container flex_container">
        
         <div class="index_project_thumb flex">
-          <div class="project_thumb p_t_{{.Title}}">
+          <div class="project_thumb p_t_{{.Params.lister_class}}">
 
             
             {{ range $index, $values := .Params.index_thumb  }}
@@ -63,7 +63,7 @@
     <div class="index_project_list index_project_{{.Title}} {{if $.IsHome}} {{ .Params.indexLayout }} {{end}} ">
       <div class="index_project_list_inner_container flex_container">
         <div class="index_project_thumb flex">
-          <div class="project_thumb p_t_{{.Title}}">
+          <div class="project_thumb p_t_{{.Params.lister_class}}">
 
             
             {{ range $index, $values := .Params.index_thumb  }}
