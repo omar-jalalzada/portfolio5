@@ -205,9 +205,11 @@
 @-webkit-keyframes oj_bounce {
  0%, 20%, 50%, 80%, 100% {
     transform: translateX(5px);
+    color:  var(--ojrd);
   }
   40% {
     transform: translateX(-10px);
+
   }
   60% {
     transform: translateX(-4px);
