@@ -69,6 +69,79 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+
+
+
+
+
+/////////////////////////
+// Button toggler 
+
+
+  /**
+   * Get the closest matching element up the DOM tree.
+   * @private
+   * @param  {Element} elem     Starting element
+   * @param  {String}  selector Selector to match against
+   * @return {Boolean|Element}  Returns null if not match found
+   */
+  var getClosest = function ( elem, selector ) {
+
+      // Element.matches() polyfill
+      if (!Element.prototype.matches) {
+          Element.prototype.matches =
+              Element.prototype.matchesSelector ||
+              Element.prototype.mozMatchesSelector ||
+              Element.prototype.msMatchesSelector ||
+              Element.prototype.oMatchesSelector ||
+              Element.prototype.webkitMatchesSelector ||
+              function(s) {
+                  var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                      i = matches.length;
+                  while (--i >= 0 && matches.item(i) !== this) {}
+                  return i > -1;
+              };
+      }
+
+      // Get closest match
+      for ( ; elem && elem !== document; elem = elem.parentNode ) {
+          if ( elem.matches( selector ) ) return elem;
+      }
+
+      return null;
+
+  };
+
+  
+  // When the user clicks on the button, scroll to the top of the document
+  var oj_toggler = document.getElementsByClassName("toggler_container");
+  if (oj_toggler != null && oj_toggler !== undefined) {
+      var switchers = document.getElementsByClassName('toggle_opt')
+      var i;
+      for (i = 0; i < switchers.length; i++) {
+        switchers[i].addEventListener("click", function(){
+          // oj_toggler.className = this.getAttribute("switch");
+          var current_switch = this.getAttribute("switch")
+          // oj_toggler[0].setAttribute("switch", current_switch);
+          
+          var parentToggler = getClosest(this, '.toggler_container');
+          parentToggler.setAttribute("switch", current_switch);
+
+          // remove active from others
+          for (i = 0; i < document.getElementsByClassName('toggle_opt').length; i++) {
+            switchers[i].classList.remove("active");
+          }
+          // add active to the one clicked
+          this.classList.add("active");
+        });
+      }
+  }
+
+
+
+
+
 ///////////////////////////////
 // Scroll Reveal Config & Setup
 window.sr = ScrollReveal({ duration: 500, scale: 1, distance: '10px', viewFactor: .3, easing: 'cubic-bezier(.18,.33,.59,1)' });

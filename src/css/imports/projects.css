@@ -6,6 +6,7 @@ body.projects {
 .projects_inner_container {
 
 
+
   & .p_section_top {
     margin-top: 220px;
     padding: 0 10px;
@@ -63,7 +64,9 @@ body.projects {
         margin-left:  -1px;
       }
       & .p_header_content {
-        
+        & p {
+          max-width: 510px;
+        }
       }
     }
   }
@@ -169,7 +172,6 @@ body.projects {
       }
     }
   }
-
 
 
 
@@ -295,6 +297,132 @@ body.projects {
       }
     }
   }
+
+
+
+  /*IMAGE TOGGLER*/
+  & .toggler_container {
+    /*toggler switch*/
+    & .inner_toggler_container {
+      width: 445px;
+      height: 42px;
+      /*border: 1px solid green;*/
+      background-color: color(var(--ojtl) shade(0.5%));
+      box-shadow: 0 0 10px 5px color(var(--ojtl) shade(0.5%));
+      margin: 0 auto 30px;
+      position: relative;
+      z-index: 1000;
+      & .toggle_options {
+        position: relative;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        & .toggle_opt {
+          width: 200px;
+          display: block;
+          text-align: center;
+          float: left;
+          height: 42px;
+          line-height: 3.2;
+          font-size: 13px;
+          /*border: 1px solid blue;*/
+          color: var(--ojtl4);
+          transition: all .1s cubic-bezier(0,.93,.8,.92);
+          cursor: pointer;
+          &:hover {
+            color: var(--ojtl6);
+          }
+          &.active {
+            color: var(--ojtl7);
+            text-shadow: 0 1px 0 rgba(255,255,255,.2);
+          }
+        }
+        & .options_seprator {
+          float: left;
+          height: 20px;
+          width: 1px;
+          background: var(--ojtl2);
+          margin: 11px 20px 0 20px;
+        }
+      }
+
+      & .toggle_slider {
+        width: 100%;
+        height: 100%;
+        /*background: blue;*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        & .toggle_slider_bg {
+          background-color: color(var(--ojtl01));
+          width: 200px;
+          height: 42px;
+          border-radius: 4px;
+          transition: all .8s cubic-bezier(0.850, -0.245, 0.150, 1.355);;
+          box-shadow: 0 1px 2px color(var(--ojtl) shade(6%)),
+                      0 2px 4px color(var(--ojtl) shade(4%) a(50%));
+        }
+      }
+    }
+
+    /*toggler content*/
+    & .toggler_content {
+      width: var(--oj_beyond_width);
+      height:  822px;
+      margin: auto;
+      position: relative;
+      & .img_thumb.content1 { 
+      }
+      & .img_thumb.content2 {
+        display: none;
+      }
+    }
+
+    /*Once the switcher is clicked*/
+    &[switch="opt2"] {
+      & .toggler_content {
+        & .img_thumb.content1 { display: none }
+        & .img_thumb.content2 { display: block }
+      }
+      & .dash_toggler .toggle_slider_bg {
+        transform: translate3d(242px,0,0);
+      }
+    }
+  }
+
+
+  /*CASE STUDY HEADERS*/
+  & .p_casestudy_header {
+    /*border: 1px solid red;*/
+    position: relative;
+    & .line {
+      height: 30px;
+      width: 2px;
+      background-color: var(--ojyw1);
+      position: absolute;
+      top: 0;
+      left: -20px;
+    }
+    & h4 {
+      font-weight: 300;
+      text-transform: uppercase;
+      color: var(--ojtl4);
+      font-size: 9px;
+      margin-bottom: 2px
+    }
+
+    &.center_aligned {
+      text-align: center;
+      width: 100%;
+      & .line {
+        width: 30px;
+        height: 2px;
+        margin: auto;
+        position: static;
+      }
+    }
+  }
+
 
 
 
