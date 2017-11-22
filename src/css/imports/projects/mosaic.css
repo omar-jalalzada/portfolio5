@@ -17,7 +17,7 @@ body.mosaic {
             width:  528px;
 
             position: absolute;
-            top:  -50px;
+            top:  -60px;
             left:  20px;
             & .img_thumb { 
               background-image: url("/images/project/mosaic/mosaic_top_section_grid_widget.png");
@@ -41,7 +41,7 @@ body.mosaic {
             height:  534px;
             width:  480px;
             position: absolute;
-            top:  100px;
+            top:  117px;
             left:  140px;
             & .img_thumb { 
               background-image: url("/images/project/mosaic/mosaic_top_section_search.png");
@@ -55,11 +55,11 @@ body.mosaic {
 
           }
           & .p_dots_box {
-            height:  580px;
-            width:  490px;
+            height:  600px;
+            width:  515px;
             position: absolute;
-            left:  15%;
-            top: 10%;
+            left:  11%;
+            top: 5%;
             margin-top: 0px;
             z-index: -10;
           }
@@ -70,7 +70,7 @@ body.mosaic {
 
 
       /********************************/
-      /* SECTION FOUR - Mosaic Features */
+      /* SECTION ONE - Mosaic Features */
       /********************************/
       & .mosaic_p_section1 {
 
@@ -82,11 +82,19 @@ body.mosaic {
           }
           & .toggler_content {
             & .img_thumb.content1 { 
-              background-image: url("/images/project/mosaic/stock_detail.png");
+              background-image: url("/images/project/mosaic/smartlist.png");
+              background-color: #344B6E;
             }
             & .img_thumb.content2 {
-              background-image: url("/images/project/mosaic/smartlist.png");
+              background-image: url("/images/project/mosaic/stock_detail.png");
+              background-color: #eee;
             }
+          }
+          &[switch="opt1"] .toggler_content {
+            height: 851px;
+          }
+          &[switch="opt2"] .toggler_content {
+            height: 749px;
           }
         }
       }
@@ -136,9 +144,11 @@ body.mosaic {
             & .toggler_content {
               & .img_thumb.content1 { 
                 background-image: url("/images/project/mosaic/dashboard.png");
+                background-color: #344B6E;
               }
               & .img_thumb.content2 {
-                background-image: url("/images/project/mosaic/stock_detail.png");
+                background-color: #344B6E;
+                background-image: url("/images/project/mosaic/dashboard_analysts.png");
               }
             }
           }
@@ -182,12 +192,10 @@ body.mosaic {
       & .mosaic_p_section4 {
         & .case_study_container {
           & .slide_container {
-            & .slide_inner_container {}
             height: 740px;
             width: 100%;
-            margin-bottom: 180px;
-            border: 1px solid red;
-            /*background-color: rgba(0,0,0,0.1);*/
+            margin-bottom: 140px;
+            & .slide_inner_container {}
             &.box_slide {
               height: 740px;
               width: 100%;
@@ -215,7 +223,7 @@ body.mosaic {
                   position: relative;
                   &::before {
                     content: "• ";
-                    color: var(--ojtl4); /* or whatever color you prefer */
+                    color: var(--ojtl4);  
                     font-size: 12px;
                     position: absolute;
                     font-weight: bold;
@@ -266,11 +274,13 @@ body.mosaic {
             }
 
 
+
             &.slide_1 {
               & .thumbnail_container .img_thumb{
                 background-image: url("/images/project/mosaic/mosaic_cs_einstien_problem.png");
               }
             }
+
 
             &.slide_2 {
               & .p_casestudy_header {
@@ -319,6 +329,9 @@ body.mosaic {
 
 
             &.slide_3 {
+              & .slide_inner_container .flex_container .box_slide_text_section_container {
+                margin-top: 120px;
+              }
               & .thumbnail_container .thumb_image_container {
                 height: 310px;
                 & .img_thumb {
@@ -330,6 +343,7 @@ body.mosaic {
               }
             }
 
+
             &.slide_4 {
               & .p_casestudy_header {
                 margin-bottom: 60px;
@@ -340,18 +354,41 @@ body.mosaic {
                 margin: auto;
                 position: relative;
                 margin-bottom: 40px;
+                &.image_container_1 {
+                  width: 580px;
+                  height: 360px;
+                  & .img_thumb {
+                    background-image: url("/images/project/mosaic/mosaic_cs_idea3.png");
+                  }
+                }
+                &.image_container_2 {
+                  width: 580px;
+                  height: 286px;
+                  & .img_thumb {
+                    background-image: url("/images/project/mosaic/mosaic_cs_idea2.png");
+                  }
+                }
+                &.image_container_3 {
+                  width: 580px;
+                  height: 525px;
+                  margin-top:  50px;
+                  & .img_thumb {
+                    background-image: url("/images/project/mosaic/mosaic_cs_idea1.png");
+                  }
+                }
               }
             }
 
 
 
             &.slide_5 {
+              margin-top: 200px;
               & .p_casestudy_header {
                 margin-bottom: 60px;
               }
               & .image_container {
-                width: 100;
-                height: 629px;
+                width: 1264px;
+                height: 627px;
                 margin: auto;
                 position: relative;
                 & .img_thumb {
@@ -360,31 +397,51 @@ body.mosaic {
               }
             }
 
+
             &.slide_6 {
+              & .slide_inner_container .flex_container .box_slide_text_section_container {
+                margin-top: 140px;
+              }
               & .ipad_demo_container {
                 margin-top: 80px;
                 & .ipad_outter_bevel {
                   width: 420px;
-                  height: 600px;
+                  height: 580px;
                   background: #E3E5E5;
                   box-shadow: 0 10px 20px 0 rgba(205,209,208,0.26), 0 0 1px 0 #CDD1D0, 0 1px 3px 0 rgba(198,204,202,0.68), inset 0 1px 2px 0 rgba(255,255,255,0.27);
                   border-radius: 10px;
                   position: relative;
                   margin: auto;
                   & .ipad_screen_container {
-                    width: 367px;
-                    height: 498px;
-                    background-color: var(--ojtl5);
+                    width: 364px;
+                    height: 486px;
+                    background-color: var(--ojtl6);
                     position: absolute;
                     top: 40px;
                     left: 50%;
                     border-radius: 3px;
-                    box-shadow: inset 0 0 0px 2px var(--ojtl6);
+                    /* box-shadow: inset 0 0 0px 2px var(--ojtl6); */
+          /*           border-top: 2px solid var(--ojtl6);
+                    
+                    border-left: 0px solid var(--ojtl6);
+                    border-right: 0px solid var(--ojtl6); */
+                    border-bottom: 1px solid var(--ojtl6);
                     margin-left: -calc(367/2)px;
-                    text-align: center;
+                    padding:  2px;
+                /*     text-align: center;
                     font-size: 12px;
-                    color: var(--ojtl8);
+                    color: var(--ojtl8); */
                     line-height: 20;
+                    overflow-x: hidden;
+                    & .prototype_container {
+                      background-color: red;
+                      /* margin-top: -6px; */
+                      border-radius: 3px;
+                      overflow: hidden;
+                      position: relative;
+                      width: 364px;
+                      height: 486px;
+                    }
                   }
                   & .ipad_home_button {
                     position: absolute;

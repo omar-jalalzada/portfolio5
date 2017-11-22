@@ -128,10 +128,14 @@ document.addEventListener("DOMContentLoaded", function(){
           var parentToggler = getClosest(this, '.toggler_container');
           parentToggler.setAttribute("switch", current_switch);
 
-          // remove active from others
-          for (i = 0; i < document.getElementsByClassName('toggle_opt').length; i++) {
-            switchers[i].classList.remove("active");
+
+          // remove active from other options, inside the same container
+          var currentScopeOptions = parentToggler.getElementsByClassName('toggle_opt');
+          // console.log(currentScopeOptions)
+          for (i = 0; i < currentScopeOptions.length; i++) {
+            currentScopeOptions[i].classList.remove("active");
           }
+          
           // add active to the one clicked
           this.classList.add("active");
         });
