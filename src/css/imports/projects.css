@@ -354,11 +354,11 @@ body.projects {
         top: 0;
         left: 0;
         & .toggle_slider_bg {
-          background-color: color(var(--ojtl01));
+          background-color: color(var(--ojtl01) a(30%));
           width: 200px;
           height: 42px;
           border-radius: 4px;
-          transition: all .8s cubic-bezier(0.850, -0.245, 0.150, 1.355);;
+          transition: all .8s cubic-bezier(0.850, -0.245, 0.150, 1.355);
           box-shadow: 0 1px 2px color(var(--ojtl) shade(6%)),
                       0 2px 4px color(var(--ojtl) shade(4%) a(50%));
         }
