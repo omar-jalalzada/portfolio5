@@ -26,7 +26,7 @@ body.wfl {
             height: 256px;
             width: 325px;
             position: absolute;
-            bottom:  -150px;
+            top:  320px;
             left:  31%;
             & .img_thumb { 
               background-color: #ddd;
@@ -37,7 +37,7 @@ body.wfl {
             height: 200px;
             width: 157px;
             position: absolute;
-            bottom:  -94px;
+            top:  320px;
             left:  3%;
             & .img_thumb {
               background-color: #eee; 
@@ -110,7 +110,18 @@ body.wfl {
       /* SECTION TWO - 
       /********************************/
       & .wfl_p_section2 {
-
+        & .p_header_container {
+          margin-bottom: 0;
+        }
+        & .extended_title_description {
+          margin-bottom: 60px;
+          & .flex {
+            max-width: 510px;
+            &.flex_l {
+              margin-right: 60px;
+            }
+          }
+        }
 
         & .grid_wfl_research {
           & .img_container {
