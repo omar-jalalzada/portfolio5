@@ -22,7 +22,7 @@
 
       <div class="p_role_container">
        <h3 class="p_role_title p_section_title sr_direction_right sr_delay_100">My Role</h3>
-       <p class="p_role_content sr_direction_right sr_delay_200">{{ .Params.p_role_content}}</p>
+       <p class="p_role_content sr_direction_right sr_delay_200">{{ .Params.p_role_content | safeHTML}}</p>
       </div>
     </div>
 
